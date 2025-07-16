@@ -1,0 +1,228 @@
+Open in app
+
+Sign up
+
+Sign in
+
+Write Real-World Assets on Solana: The Race to Bring Wall Street Onchain
+Joel varghese
+Follow
+5 min read
+·
+Jul 4, 2025
+
+1
+
+By Joel varghese
+
+“Everything that can be tokenized, will be.” That statement, once speculative, is now hardening into reality — and Solana is leading the charge.
+
+The idea of Real-World Assets (RWAs) — tangible financial instruments like Treasury bills, real estate, or corporate equity — being represented as tokens on a blockchain isn’t new. But what’s new is the speed and scale of its current momentum, especially on Solana, a high-performance blockchain often known for DeFi and NFTs, now becoming a hub for institutional-grade tokenization.
+
+This article takes a deep dive into how RWAs are accelerating on Solana, why this matters, who’s building what, and where we’re headed next.
+
+🚀 The RWA Boom, By the Numbers
+
+Let’s start with the big picture:
+
+RWA tokenization has grown from $5 billion in 2022 to over $24 billion as of June 2025 — that’s a 380% growth in just over two years.
+Tokenized Treasury bills alone jumped from $100 million (Jan 2023) to $7.5 billion (June 2025) — driven largely by crypto-native platforms meeting real-world investor demand.
+Solana currently leads all chains in transaction volume per holder (~$40M) — an underrated but telling metric indicating actual usage.
+Institutions have arrived: BlackRock’s $2.9B BUIDL money market fund (MMF) and Franklin Templeton’s FOBXX are both now natively integrated on Solana.
+
+This isn’t vaporware. This is Wall Street capital, on-chain, now live.
+
+🔍 Why RWAs, Why Now?
+
+RWAs bridge the gap between traditional finance (TradFi) and decentralized finance (DeFi), unlocking:
+
+24/7 global market access
+Faster settlement and improved transparency
+Fractional ownership of illiquid assets
+Programmable money and composability with DeFi
+
+The macro backdrop matters, too. In an environment where yield has become attractive again, tokenized T-bills offering 4–5% APY — with real-time redemption and DeFi integration — suddenly make crypto treasuries more compelling than stablecoins idling in wallets.
+
+⚙️ Solana’s Unique Advantage in RWA Tokenization
+
+Solana is uniquely suited for RWA infrastructure because of:
+
+High throughput and ultra-low latency: >65K TPS, sub-second finality — enabling real-time asset management at scale.
+Low fees: Keeping microtransactions viable.
+Robust developer ecosystem: 2,500+ monthly active devs as of mid-2025.
+Composability: Everything on a single shard, making integrations seamless.
+
+While Ethereum pioneered token standards like ERC-20, Solana is proving to be the execution layer where RWAs can actually scale.
+
+🏗️ Key Platforms Leading RWA on Solana
+
+Here’s a breakdown of some of the platforms defining the RWA stack on Solana today:
+
+SectorProjectDescriptionTokenized SecuritiesFranklin Templeton (FOBXX)Tokenized US Government Money Market FundBlackRock (BUIDL)World’s largest asset manager launched their MMF natively on-chainYield and CreditMaple FinanceUnderwriting real-world credit via onchain poolsCentrifugeTokenizing invoices and business loans (cross-chain now Solana compatible)InfrastructureOndo FinanceOffering tokenized bonds, treasuries, and stablecoins backed by real-world assetsVNXBrings European regulatory-compliant asset tokenizationCredixEmerging market debt issuance and real-world yieldEnterprise IntegrationR3’s Corda x SolanaUsed by HSBC, Euroclear, SDX — Corda’s Solana integration is massivePublic Market InnovationJupiter x Kazakhstan Stock Exchange (KASE)Exploring dual listings of tokenized equity shares and traditional IPOs
+
+Solana’s architecture isn’t just appealing to DeFi degens anymore. It’s earning credibility among banks, asset managers, and regulators.
+
+🌐 Institutional Adoption: Beyond the Hype
+
+Two of the world’s largest asset managers aren’t just experimenting — they’re committing.
+
+BlackRock’s BUIDL fund is not only live but distributes tokenized shares using Sablier-like streaming on Solana. It allows programmable dividends, real-time redemption, and access control using smart contracts.
+Franklin Templeton’s FOBXX, the first U.S.-registered fund to use blockchain for recordkeeping, now has an active Solana integration — cutting down on intermediaries and clearing time.
+
+Together, these are powerful validations. RWAs are no longer a fringe idea — they’re becoming default infrastructure for future financial markets.
+
+🧭 Ecosystem Map: The RWA Landscape on Solana
+
+Here’s how the RWA sector on Solana breaks down today:
+
+plaintext
+CopyEdit
++------------------+
+           |    Institutions  |
+           | (BlackRock, FT)  |
+           +--------+---------+
+                    |
+                    v
+        +-----------+-----------+
+        |  Token Issuers / Infra |
+        |   (Ondo, VNX, Maple)   |
+        +-----------+-----------+
+                    |
+                    v
+     +--------------+--------------+
+     |  Asset Backing & Custody   |
+     |  (Corda, Fireblocks, etc.) |
+     +--------------+--------------+
+                    |
+                    v
+     +--------------+--------------+
+     |     Onchain Trading & UX    |
+     | (Jupiter, Orca, Kamino, etc.) |
+     +-----------------------------+
+
+Everything is composable. Tokenized treasuries from Ondo can be pooled into Kamino vaults, traded on Jupiter, or used as collateral in Drift.
+
+This stack makes Solana not just a storage layer, but a global operating system for financial assets.
+
+🌍 Regulation: Global Divergence, Emerging Convergence
+
+The regulatory landscape for RWAs is… fragmented.
+
+RegionStanceU.S.Cautiously optimistic. SEC recognizes tokenized MMFs but demands tight compliance.EUProgressive. MiCA creates clarity for stablecoins, tokenized securities. VNX leverages this.Asia (SG, HK)Regulatory sandboxes encourage tokenization experiments. HSBC and UBS involved.Middle EastAbu Dhabi and Bahrain are rapidly building legal frameworks for RWAs.
+
+Trend: Jurisdictions are realizing the benefits of on-chain assets — faster settlement, better auditability — but demand traditional regulatory oversight. Expect tokenized RWAs to follow the same compliance rules as their TradFi counterparts.
+
+Prediction: We’ll likely see an “RWA passporting” standard, where assets issued in compliant jurisdictions can trade globally across L1s and centralized venues.
+
+🔮 What’s Next? Opportunities in RWA x Solana
+
+RWAs are still early. Here are some exciting use cases on the horizon:
+
+1. Tokenized IPOs & Dual Listings
+
+With Jupiter and Kazakhstan Stock Exchange exploring dual IPOs + tokenized shares, startups could list on-chain and off-chain simultaneously. Imagine Robinhood shares tradable on Solana seconds after IPO.
+
+2. Automated Wealth Management
+
+On-chain MMFs + Solana-based rebalancers like Kamino could create fully automated ETFs, managing T-bills and yield strategies with zero intermediaries.
+
+3. Global Trade Finance
+
+Projects like Credix and Centrifuge allow tokenization of invoices, which could be instantly collateralized or sold on Solana-based credit markets.
+
+4. Programmable Dividends & DAOs
+
+DAOs or on-chain companies issuing tokenized equity (via RWA rails) with real-time, transparent dividend streams. Think Sablier + BlackRock.
+
+5. Local Government Bonds
+
+Imagine a Kerala municipality issuing green bonds via Ondo or VNX rails — accessible to locals directly via Solana wallet.
+
+🎯 TL;DR: Solana is Becoming Wall Street’s Execution Layer
+
+The RWA movement isn’t just about putting old assets on new rails — it’s about building financial products that couldn’t exist before:
+
+Assets that settle in seconds, not days
+Yield that streams by the second
+Equities that are tradable, 24/7, globally
+
+Solana is emerging not just as a blockchain, but as a new market infrastructure layer, backed by both crypto-native builders and financial giants.
+
+Real-World Assets are here. They’re real. And on Solana, they’re accelerating.
+
+📚 References
+RWA.xyz — Tokenization Data
+Franklin Templeton’s FOBXX Announcement
+BlackRock’s BUIDL Fund Info
+Ondo Finance Docs
+Maple Finance
+VNX Platform
+Jupiter x KASE Announcement
+R3 Corda News
+Solana Foundation Metrics Joel varghese
+
+How to Mint an NFT using Metaplex Umi and Candymachine
+NFTs represent unique digital assets, such as artwork, collectibles, and even virtual real estate, and have taken the digital world by…
+Oct 11, 2023
+5
+1 Joel varghese
+
+Create Nft using candymachine
+We’ll learn how to mint a collection of NFTs. We’ll do this using Candy Machine — It’s a program that lets creators bring a collection of…
+Oct 8, 2023
+4
+1 Joel varghese
+
+Unlocking the Future: How Rome Protocol is Revolutionizing Blockchain Interoperability
+Deep dive into how Rome Protocol Transforms Solana into a Modular Powerhouse for Cross-Chain Solutions
+Nov 4, 2024
+4 Joel varghese
+
+The Finternet: A Vision for a Decentralized Financial Ecosystem
+Introduction
+Aug 18, 2024
+4 JF
+
+Silicon Shock: Navigating Job Cuts and Economic Crossroads in 2025
+In a world increasingly driven by innovation, the name “Silicon Valley” has long been synonymous with opportunity, growth, and progress…
+Jun 14
+18 Bhagya Rana
+
+Why Rust Is Becoming the Go-To Language for High-Performance Blockchain Apps
+From Solana to Polkadot, Rust’s blend of speed, safety, and modern design is redefining the future of blockchain development.
+3d ago
+100 CoinPedia Markets
+
+Top 7 Altcoins to Buy Under $1 in July 2025
+The cryptocurrency market is showing bullish signals today. Bitcoin surpassed the $118,000 mark (+5.71%), a new all-time high on July 11…
+5d ago
+95
+4 In
+
+CoinsBench
+
+by
+
+Max
+
+How to Develop a pump.fun Smart Contract
+How to Write a Bonding Curve Contract Like pump.fun
+Mar 18
+19 Yong kang Chia
+
+Solana AMM Under the Hood: Raydium Insights for Solana Builders
+Diving deep into Raydium AMM
+Apr 17
+113 In
+
+InsiderFinance Wire
+
+by
+
+Kabilan Thavabalalingam
+
+How I Print Money Daily with This Simple Options Strategy
+A step-by-step guide to making $25-$50 daily
+Jul 9
+201
+15

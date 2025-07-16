@@ -1,0 +1,416 @@
+ARIEL
+The Solana RWA Revolution: How Real-World Assets Found Their Perfect Blockchain Home
+Picture this: You wake up one morning and decide to buy a fraction of a whisky cask aging in Scotland, trade some tokenized real estate in Detroit, and earn yield on U.S. Treasury bills.
+ARIEL
+JUL 05, 2025
+
+All before your morning coffee gets cold. All on the same blockchain. Welcome to the wild world of Real-World Assets (RWAs) on Solana, where traditional finance is getting a blockchain makeover that's turning heads from Wall Street to Singapore.
+
+While everyone was busy arguing about whether crypto was "real money," something quietly revolutionary was happening. Traditional assets worth trillions of dollars started migrating onto blockchains, and Solana emerged as the unexpected favorite destination. What started as a $5 billion experiment in 2022 has exploded into a $24 billion movement by mid-2025. But here's the thing – we're just getting started.
+
+The Numbers Don't Lie: Solana's RWA Explosion
+
+Let's cut through the hype and look at what's actually happening. The data tells a story that even the most skeptical traditional finance dinosaur can't ignore.
+
+The growth trajectory of Real-World Assets on Solana shows remarkable acceleration, with Solana's TVL increasing 15x from 2022 to 2025 while daily transactions surged 8x to 162 million
+
+The growth trajectory is frankly absurd. Solana's Total Value Locked (TVL) in DeFi has skyrocketed from a modest $500 million in 2022 to $7.8 billion in 2025 – that's a 15x increase in just three years12. Meanwhile, daily transactions have exploded from 20 million to 162 million, making Solana the undisputed king of transaction throughput in the RWA space21.
+
+But the real story is in the tokenized Treasury bills market. We're talking about going from $100 million in January 2023 to $7.5 billion by June 202534. That's not growth – that's a category being born in real-time. When you see numbers like this, you realize we're witnessing something bigger than just another crypto trend.
+
+What makes these numbers even more impressive is Solana's transaction efficiency. While Ethereum users are still paying gas fees that could fund a small vacation, Solana processes millions of transactions daily with fees measured in fractions of pennies56. This isn't just technically superior – it's economically necessary for RWAs to work at scale.
+
+The Big Money Has Arrived: Institutional Validation
+
+Remember when crypto was just for "internet funny money"? Those days are definitively over. The entrance of traditional finance giants into Solana's RWA ecosystem represents one of the most significant validation moments in blockchain history.
+
+BlackRock, the $10 trillion asset management behemoth, didn't just dip its toe in the water – it cannon-balled in with its BUIDL fund. Starting on Ethereum, BlackRock eventually expanded to Solana, bringing over $1.7 billion in tokenized money market funds to the ecosystem37. When Larry Fink's shop starts tokenizing assets on your blockchain, you know something fundamental has shifted.
+
+Franklin Templeton followed suit with their FOBXX fund, which now manages nearly $600 million across eight blockchains, including Solana48. But perhaps the most telling move came from R3's Corda platform – the enterprise blockchain darling used by HSBC, SDX, and Euroclear. Their decision to integrate with Solana and migrate $10 billion in tokenized assets signals that even the most conservative enterprise players see Solana as the future91011.
+
+Then there's the Jupiter-Kazakhstan Stock Exchange partnership1213. This isn't just another pilot program – it's a blueprint for dual listings where companies can go public through traditional IPOs while simultaneously listing tokenized shares on Solana. Imagine buying Tesla stock on NASDAQ and its tokenized equivalent on a DEX, with instant settlement and 24/7 trading. That's not science fiction anymore.
+
+The Wild West of Tokenization: Players and Use Cases
+
+The Solana RWA ecosystem reads like a fever dream of financial innovation. It's not just about boring old Treasury bills anymore – though those are certainly having their moment.
+
+The Solana RWA ecosystem features diverse players across multiple asset classes, with Ondo Finance leading in US Treasuries tokenization at $1B market cap, while newer entrants explore innovative niches like whisky casks and wine
+
+Leading the charge is Ondo Finance, the $1 billion gorilla in the room that's made US Treasury tokenization its specialty1415. But the real fun starts when you look at the creative destruction happening across asset classes.
+
+Take DigiCask, which launched in 2024 with the audacious goal of tokenizing whisky casks1617. Yes, you read that correctly – you can now own fractions of aging Scotch whisky through blockchain tokens. Their platform addresses a real problem: whisky investment has traditionally required buying entire casks worth tens of thousands of dollars. Now you can own a fraction of a rare cask for the price of a nice dinner.
+
+BAXUS took a similar approach with wine and spirits, building on Solana's infrastructure to create instant settlement and proof of authenticity for high-end bottles18. What started as a solution to price inefficiencies in the spirits market has evolved into a full-scale platform for luxury asset tokenization.
+
+The real estate play is equally fascinating. Parcl enables investment in specific geographic real estate markets without actually buying property1920. Want exposure to Detroit's housing recovery or Miami's luxury market? There's a token for that. HomebaseDAO takes a different approach, focusing on direct real estate tokenization through NFTs2122.
+
+Credix brings private credit to emerging markets, allowing global investors to fund FinTech companies in Latin America using USDC1916. It's like peer-to-peer lending, but with blockchain rails and global reach.
+
+VNX rounds out the ecosystem with tokenized European stablecoins (VEUR, VCHF) and gold (VNXAU), providing non-USD alternatives for global users2324. In a world dominated by dollar-denominated assets, this diversification is more valuable than most realize.
+
+The Global Regulatory Chess Game
+
+Here's where things get interesting – and complicated. RWA tokenization sits at the intersection of traditional securities law, emerging crypto regulation, and cross-border compliance. It's a regulatory minefield that's being navigated in real-time.
+
+Diagram illustrating the complex and costly traditional process of cross-border payments between multiple banks and correspondent banks payments
+
+The regulatory landscape varies dramatically by jurisdiction, and these differences are shaping where innovation happens2526. Dubai and the UAE have positioned themselves as the most crypto-friendly jurisdictions, offering clear frameworks and regulatory sandboxes25. Singapore isn't far behind, with the Monetary Authority of Singapore (MAS) providing clear guidelines that encourage innovation while maintaining investor protection25.
+
+Europe's Markets in Crypto-Assets (MiCA) regulation, implemented in 2025, represents the world's first comprehensive crypto regulatory framework2627. While it brings clarity, it also imposes significant compliance costs that favor larger players. The regulation covers asset-referenced tokens and e-money tokens with specific requirements for issuers2728.
+
+The United States remains a work in progress. The SEC under Paul Atkins has shifted toward viewing tokenization as innovation rather than a compliance problem29. The commission is actively considering conditional exemptions for tokenized securities, potentially creating regulatory sandboxes similar to those in other jurisdictions3031.
+
+But here's the critical insight: regulatory clarity isn't just about compliance costs – it's about institutional confidence. The flood of institutional money into Solana RWAs correlates directly with regulatory clarity in key jurisdictions.
+
+The Trillion-Dollar Opportunity Ahead
+
+Let's talk about the elephant in the room: market projections that range from optimistic to absolutely bonkers.
+
+Global tokenization market projections show explosive growth potential, with optimistic scenarios reaching $18.9 trillion by 2030, representing a 378x increase from 2025 levels and fundamentally reshaping global finance
+
+Conservative estimates put the global tokenization market at $2 trillion by 20303233. Moderate projections suggest $5 trillion. But optimistic scenarios – backed by firms like Boston Consulting Group and Ripple – project $18.9 trillion by 203033. That's a 378x increase from current levels.
+
+These aren't just random numbers thrown around by crypto evangelists. McKinsey, BCG, and other management consulting giants are behind these projections3433. They see tokenization as fundamentally restructuring how assets are issued, traded, and settled globally.
+
+The most promising near-term opportunities lie in cross-border payments and trade finance353637. Current cross-border payment systems are expensive, slow, and opaque. Tokenization can reduce settlement times from days to minutes while cutting costs by 40% or more3537.
+
+Supply chain finance is another massive opportunity. Instead of waiting weeks for payment after shipping goods, companies could receive instant payment through smart contracts that execute automatically when goods are delivered38. This isn't theoretical – pilot programs are already running.
+
+Carbon credit tokenization represents an entirely new market category. As companies face increasing pressure to offset emissions, tokenized carbon credits could create liquid, transparent markets for environmental assets39.
+
+The Uncomfortable Truths: Challenges and Criticisms
+
+But let's pump the brakes for a moment. Not everything in RWA land is sunshine and tokenized rainbows. There are real challenges that the crypto community often glosses over.
+
+Diagram illustrating the core components and flow of funds within a decentralized finance protocol mdpi
+
+First, the centralization problem. RWAs inherently require centralized custodians, legal structures, and regulatory oversight4038. This creates single points of failure that contradict crypto's decentralized ethos. When Ondo Finance manages your Treasury bill tokens, you're essentially trusting a traditional financial intermediary – just with blockchain rails.
+
+Second, the liquidity problem persists40. While tokenization theoretically improves liquidity, many RWA tokens still trade in thin markets with wide bid-ask spreads. Creating liquid secondary markets requires market makers, institutional participation, and time. We're not there yet for most asset classes.
+
+Third, legal complexity is mind-bending38. What happens when a tokenized real estate investment goes bad? Which jurisdiction's laws apply? How do you enforce property rights across borders? Traditional finance has centuries of legal precedent to rely on. Tokenized assets are largely uncharted territory.
+
+Fourth, the technology stack isn't foolproof. Smart contract bugs, oracle failures, and bridge exploits can wipe out value instantly38. Traditional finance may be slow and expensive, but it's also remarkably stable. DeFi protocols get hacked regularly.
+
+Looking Forward: The Next Chapter
+
+Despite these challenges, the momentum behind RWAs on Solana feels unstoppable. The combination of institutional validation, regulatory clarity, and technical innovation has created a perfect storm for growth.
+
+The most exciting developments are happening at the intersection of DeFi and traditional finance. Projects are building sophisticated structured products, automated compliance systems, and cross-chain interoperability solutions38. Solana's token extensions provide programmable compliance features that make regulatory integration much easier4142.
+
+The next wave of innovation will likely focus on more exotic asset classes. Think intellectual property rights, carbon credits, sports contracts, and even human capital4344. As legal frameworks mature and technology improves, the scope of what can be tokenized will expand dramatically.
+
+But the real game-changer will be when tokenized assets become acceptable collateral across the traditional financial system3433. Imagine using your tokenized real estate portfolio as collateral for a traditional bank loan, or pledging tokenized Treasury bills as margin for stock trades. That level of integration would represent a true merger of TradFi and DeFi.
+
+Conclusion: The Revolution is Already Here
+
+The RWA revolution on Solana isn't coming – it's already here. With $24 billion in tokenized assets, major institutional players, and regulatory frameworks taking shape globally, we've crossed the threshold from experiment to ecosystem.
+
+Sure, challenges remain. The technology is still evolving, regulations are in flux, and many projects are barely past the proof-of-concept stage. But the direction of travel is clear: traditional assets are moving onchain, and Solana is emerging as the preferred destination.
+
+What makes this particularly exciting is that we're still in the early innings. If optimistic projections are even partially correct, we're looking at a complete restructuring of global finance over the next decade. Assets that have been trapped in slow, expensive, analog systems for centuries are being liberated through tokenization.
+
+The question isn't whether this transformation will happen – it's whether traditional financial institutions will adapt quickly enough to remain relevant. For those building on Solana today, the opportunity is enormous. For those sitting on the sidelines, the risk of being left behind grows larger every day.
+
+Welcome to the future of finance. It's tokenized, it's global, and it runs on Solana.
+
+References
+
+https://solana.com/solutions/real-world-assets
+6 https://osl.com/academy/article/how-are-rwas-tokenized-ethereum-vs-solana-comparison/
+14 https://academy.swissborg.com/en/learn/ondo-finance
+45 https://www.altcoinist.com/blog/mpl-maple-finance-reviiew
+23 https://financialit.net/news/cryptocurrencies/tokenized-gold-euro-and-swiss-franc-stablecoins-launch-solana-expanding-stable
+46 https://www.helius.dev/blog/solana-real-world-assets
+19 https://coinedition.com/from-whisky-to-real-estate-solanas-wild-world-of-tokenized-assets/
+47 https://thecurrencyanalytics.com/altcoins/ondo-finance-and-solana-forge-alliance-revolutionizing-tokenized-assets-and-defi-protocols-87254
+48 https://www.linkedin.com/pulse/maple-finances-exploration-application-rwa-space-hu-kenneth-t9fwc
+49 https://dexscreener.com/solana/hhxbdc3hm5b3s3bz3qzrdshp5qgvrhrreoeyh1jprbx4
+50 https://tokeny.com/real-world-asset-rwa-tokenization-ecosystem-map/
+16 https://support.bittime.com/hc/en-us/articles/9687412288527-6-RWA-Projects-to-Watch-on-Solana-May-2024-Guide
+15 https://solanacompass.com/projects/ondo
+51 https://maple.finance/insights/syrup-by-maple-bringing-real-yield-to-defi
+52 https://spl.solana.com/token
+21 https://www.binance.com/en/square/post/4786711505930
+22 https://solanacompass.com/projects/category/rwa?page=3
+53 https://www.bitget.com/news/detail/12560604773706
+54
+24 https://vnx.li/vnxs-progress-on-solana/
+3 https://coinmarketcap.com/academy/article/blackrock-expands-buidl-to-solana-as-tokenized-fund-surpasses-dollar17-billion
+4 https://cryptoslate.com/franklin-templeton-fobxx-tokenized-money-fund-goes-live-on-solana/
+9https://coinstats.app/news/13186d2b25572a6ac32c6a8ae0643e89da112b7eca3255ec300df93d9a6849ec_Cordas-R3-Platform-Shifts-to-Public-Blockchains-through-Solana-Partnership/
+55 https://halykfinance.kz/novosti/halyk-finance-jsc-announces-the-planned-public-offering-of-jupiter-energy-limited-common-shares-on-astana-international-exchange.html?lang=en
+1 https://en.coinotag.com/solana-network-shows-potential-growth-in-app-revenue-and-decentralization-metrics-in-q2-2025/
+7 https://www.coindesk.com/markets/2025/03/25/blackrock-securitize-expand-usd1-7b-tokenized-money-market-fund-buidl-to-solana
+56 https://cointelegraph.com/news/franklin-templeton-launches-tokenized-money-fund-base
+10 https://www.bitget.com/news/detail/12560604771836
+12 https://www.okx.com/en-eu/news/article/jupiter-cooperates-kazakhstan-stock-exchange-aix-promote-dual-listing-45608106677280
+57 https://www.marketscreener.com/news/latest/Solana-s-big-year-ahead-key-metrics-and-insights-48619093/
+58 https://www.prnewswire.com/news-releases/blackrock-and-securitize-debut-new-buidl-share-class-on-solana-network-302410160.html
+8 https://cryptobriefing.com/tokenized-treasury-fund-solana/
+11 https://crypto.news/r3-taps-into-solana-to-bring-institutions-and-rwas-to-the-blockchain/
+59 https://www.tipranks.com/news/company-announcements/jupiter-energys-capital-raising-plans-altered-eyes-kazakh-market
+60 https://laikalabs.ai/blogs/introduction-to-real-world-assets-rwas-on-solana-2025-guide
+61 https://securitize.io/learn/press/blackrock-launches-first-tokenized-fund-buidl-on-the-ethereum-network
+62 https://rwa.media/franklin-templeton-tokenizes-us-government-money-fund-valued-at-380-million
+63 https://de.cointelegraph.com/news/r3-und-solana-starten-gemeinsame-infrastruktur-fur-digitale-kapitalmarkte
+13 https://www.okx.com/news/article/jupiter-cooperates-kazakhstan-stock-exchange-aix-promote-dual-listing-45608106677280
+2 https://www.helius.dev/blog/solana-ecosystem-report-h1-2025
+25 https://blog.tiamonds.com/rwa-tokenization-country-rules/
+26 https://beaumont-capitalmarkets.co.uk/future-of-tokenized-securities-in-europe-post-mica/
+29 https://cointelegraph.com/news/sec-chair-paul-atkins-tokenization-crypto-regulation-shift
+41 https://cryptonews.com/news/solana-blockchain-introduces-token-extensions-allowing-more-programmable-rules-for-tokens/
+64 https://www.gate.io/crypto-wiki/article/the-rwa-de-pin-protocol-suirwapin-a-new-infrastructure-connecting-real-world-assets-and-the-on-chain-world
+65 https://arf.one/rwa-tokenization/
+27 https://rue.ee/blog/mica-regulation-for-tokenisation/
+30 https://www.mofo.com/resources/insights/250512-us-sec-considers-conditional-exemption-for-tokenized-securities
+42 https://cryptorank.io/news/feed/f5b45-solana-blockchain-introduces-token-extensions-allowing-more-programmable-rules-for-tokens.htm
+66 https://www.iex.ec/academy/rwas-depin-ecosystem
+67 https://www.rwa.io/post/regulatory-challenges-of-tokenizing-real-world-assets
+28 https://www.evergonlabs.com/blog/navigating-and-asset-tokenization
+31 https://www.winston.com/print/v2/content/1101346/sec-hosts-roundtable-with-crypto-task-force-on-tokenization.pdf
+68 https://ambcrypto.com/solana-launches-new-token-extensions-here-are-the-details/
+69 https://ndax.io/en/blog/article/tangibles-and-tech-exploring-the-rwa-and-de-pin-landscape
+70 https://www.openrwa.io/blog/regulatory-landscape-of-rwa-tokenization-what-investors-need-to-know
+71 https://www.deloitte.com/lu/en/Industries/investment-management/perspectives/mica-a-new-major-milestone-in-your-crypto-asset-transformation-journey.html
+72 https://cointelegraph.com/news/finance-sector-group-urges-sec-to-reject-exemption-for-tokenized-stocks
+73 https://www.prnewswire.com/news-releases/solana-network-unveils-token-extensions-empowering-financial-institutions-and-enterprise-grade-businesses-to-enter-web3-302042625.html
+74 https://www.blockchainappfactory.com/blog/how-does-the-integration-of-rwa-tokenization-and-depin-revolutionize-digital-asset-transactions/
+75 https://solanacompass.com/learn/Superteam/the-solana-ecosystem-call-may-2025
+76 https://cryptoslate.com/5-most-rapidly-growing-tokenization-trends-to-watch-for-in-2025/
+77
+
+
+17 https://cryptoslate.com/press-releases/digicask-debuts-tokenized-whisky-casks-on-solana-expanding-accessibility-in-the-75-billion-global-whisky-market/
+78 https://solana.com/uk/news/solana-permissioned-environments-spe-introduction
+79 https://www.bitget.com/news/detail/12560604528915
+80 https://github.com/dOrgTech/homebase-dao-deployer
+18 https://solanacompass.com/learn/Lightspeed/why-businesses-are-building-on-solana-baxus-tzvi-wiesel
+81 https://solana.com/developers/guides/permissioned-environments
+82 https://www.coingecko.com/research/publications/solana-vs-ethereum-2025
+32 https://coingeek.com/rwa-tokenization-to-hit-50-billion-in-2025-report/
+83 https://github.com/dOrgTech/homebase-app
+84 https://note.com/solana_japan/n/n5fa61cf8ff9c
+85 https://electroiq.com/stats/solana-statistics/
+86 https://www.einpresswire.com/article/820398376/key-trend-in-asset-tokenization-market-2025-blockchain-platforms-driving-security-efficiency-revolution
+20 https://www.prnewswire.com/news-releases/10-billion-in-real-estate-and-200-000-onchain-addresses-on-propy-dapp-ready-for-tokenization-302200945.html
+87 https://chainwire.org/2024/05/02/digicask-debuts-tokenized-whisky-casks-on-solana-expanding/
+88 https://note.com/standenglish/n/n8f2fcac52fd1
+43 https://www.blockchainappfactory.com/blog/rwa-tokenization-2025-key-trends-use-cases/
+89 https://blog.tbrc.info/2025/02/tokenization-market-size/
+40 https://www.linkedin.com/pulse/scalingreal-world-assets-defi-challenges-involved-muthe
+35 https://www.blockhead.co/2024/04/05/central-banks-join-forces-to-revolutionize-cross-border-payments-via-tokenization/
+90 https://blockchain.news/flashnews/rwa-tokenization-analysis-10-key-drivers-pushing-institutional-adoption-on-chain
+44 https://web.ourcryptotalk.com/blog/top-10-rwa-projects-2025
+91 https://hackernoon.com/navigating-the-future-8-tokenization-trends-and-predictions-for-2024
+92 https://coincu.com/205716-real-world-assets-rwas-integrated-defi-protocols/
+36 https://www.macroglobal.co.uk/blog/financial-technology/cross-border-payments-tokenization/
+34 https://cointelegraph.com/news/institutions-rwa-tokenization-investment
+93 https://www.osl.com/hk-en/academy/article/real-world-assets-on-blockchain-why-rwa-matters-in-2025
+33 https://www.ledgerinsights.com/bcg-ripple-predict-tokenization-to-reach-18-9-trillion-by-2033/
+38 https://aurum.law/newsroom/Real-World-Assets-in-DeFi
+37 https://www.paxos.com/blog/tokenization-and-cross-border-payments
+39 https://www.ainvest.com/news/rwa-tokenization-market-surges-800-65-billion-driven-institutional-adoption-2507/
+94 https://tangem.com/en/blog/post/real-world-assets-rwa/
+95 https://www.thebusinessresearchcompany.com/market-insights/tokenization-market-overview-2025
+96 https://forum.algorand.org/t/how-real-world-assets-can-transform-defi/10944
+97 https://publications.iadb.org/en/cross-border-payments-blockchain
+98 https://www.ainvest.com/news/real-world-assets-market-surges-800-65-billion-institutional-adoption-2507/
+
+https://solana.com/solutions/real-world-assets
+
+https://osl.com/academy/article/how-are-rwas-tokenized-ethereum-vs-solana-comparison/
+
+https://academy.swissborg.com/en/learn/ondo-finance
+
+https://www.altcoinist.com/blog/mpl-maple-finance-reviiew
+
+https://financialit.net/news/cryptocurrencies/tokenized-gold-euro-and-swiss-franc-stablecoins-launch-solana-expanding-stable
+
+https://www.helius.dev/blog/solana-real-world-assets
+
+https://coinedition.com/from-whisky-to-real-estate-solanas-wild-world-of-tokenized-assets/
+
+https://thecurrencyanalytics.com/altcoins/ondo-finance-and-solana-forge-alliance-revolutionizing-tokenized-assets-and-defi-protocols-87254
+
+https://www.linkedin.com/pulse/maple-finances-exploration-application-rwa-space-hu-kenneth-t9fwc
+
+https://dexscreener.com/solana/hhxbdc3hm5b3s3bz3qzrdshp5qgvrhrreoeyh1jprbx4
+
+https://tokeny.com/real-world-asset-rwa-tokenization-ecosystem-map/
+
+https://support.bittime.com/hc/en-us/articles/9687412288527-6-RWA-Projects-to-Watch-on-Solana-May-2024-Guide
+
+https://solanacompass.com/projects/ondo
+
+https://maple.finance/insights/syrup-by-maple-bringing-real-yield-to-defi
+
+https://spl.solana.com/token
+
+https://www.binance.com/en/square/post/4786711505930
+
+https://solanacompass.com/projects/category/rwa?page=3
+
+https://www.bitget.com/news/detail/12560604773706
+
+https://vnx.li/vnxs-progress-on-solana/
+
+https://coinmarketcap.com/academy/article/blackrock-expands-buidl-to-solana-as-tokenized-fund-surpasses-dollar17-billion
+
+https://cryptoslate.com/franklin-templeton-fobxx-tokenized-money-fund-goes-live-on-solana/
+
+https://coinstats.app/news/13186d2b25572a6ac32c6a8ae0643e89da112b7eca3255ec300df93d9a6849ec_Cordas-R3-Platform-Shifts-to-Public-Blockchains-through-Solana-Partnership/
+
+https://halykfinance.kz/novosti/halyk-finance-jsc-announces-the-planned-public-offering-of-jupiter-energy-limited-common-shares-on-astana-international-exchange.html?lang=en
+
+https://en.coinotag.com/solana-network-shows-potential-growth-in-app-revenue-and-decentralization-metrics-in-q2-2025/
+
+https://www.coindesk.com/markets/2025/03/25/blackrock-securitize-expand-usd1-7b-tokenized-money-market-fund-buidl-to-solana
+
+https://cointelegraph.com/news/franklin-templeton-launches-tokenized-money-fund-base
+
+https://www.bitget.com/news/detail/12560604771836
+
+https://www.okx.com/en-eu/news/article/jupiter-cooperates-kazakhstan-stock-exchange-aix-promote-dual-listing-45608106677280
+
+https://www.marketscreener.com/news/latest/Solana-s-big-year-ahead-key-metrics-and-insights-48619093/
+
+https://www.prnewswire.com/news-releases/blackrock-and-securitize-debut-new-buidl-share-class-on-solana-network-302410160.html
+
+https://cryptobriefing.com/tokenized-treasury-fund-solana/
+
+https://crypto.news/r3-taps-into-solana-to-bring-institutions-and-rwas-to-the-blockchain/
+
+https://www.tipranks.com/news/company-announcements/jupiter-energys-capital-raising-plans-altered-eyes-kazakh-market
+
+https://laikalabs.ai/blogs/introduction-to-real-world-assets-rwas-on-solana-2025-guide
+
+https://securitize.io/learn/press/blackrock-launches-first-tokenized-fund-buidl-on-the-ethereum-network
+
+https://rwa.media/franklin-templeton-tokenizes-us-government-money-fund-valued-at-380-million
+
+https://de.cointelegraph.com/news/r3-und-solana-starten-gemeinsame-infrastruktur-fur-digitale-kapitalmarkte
+
+https://www.okx.com/news/article/jupiter-cooperates-kazakhstan-stock-exchange-aix-promote-dual-listing-45608106677280
+
+https://www.helius.dev/blog/solana-ecosystem-report-h1-2025
+
+https://blog.tiamonds.com/rwa-tokenization-country-rules/
+
+https://beaumont-capitalmarkets.co.uk/future-of-tokenized-securities-in-europe-post-mica/
+
+https://cointelegraph.com/news/sec-chair-paul-atkins-tokenization-crypto-regulation-shift
+
+https://cryptonews.com/news/solana-blockchain-introduces-token-extensions-allowing-more-programmable-rules-for-tokens/
+
+https://www.gate.io/crypto-wiki/article/the-rwa-de-pin-protocol-suirwapin-a-new-infrastructure-connecting-real-world-assets-and-the-on-chain-world
+
+https://arf.one/rwa-tokenization/
+
+https://rue.ee/blog/mica-regulation-for-tokenisation/
+
+https://www.mofo.com/resources/insights/250512-us-sec-considers-conditional-exemption-for-tokenized-securities
+
+https://cryptorank.io/news/feed/f5b45-solana-blockchain-introduces-token-extensions-allowing-more-programmable-rules-for-tokens.htm
+
+https://www.iex.ec/academy/rwas-depin-ecosystem
+
+https://www.rwa.io/post/regulatory-challenges-of-tokenizing-real-world-assets
+
+https://www.evergonlabs.com/blog/navigating-and-asset-tokenization
+
+https://www.winston.com/print/v2/content/1101346/sec-hosts-roundtable-with-crypto-task-force-on-tokenization.pdf
+
+https://ambcrypto.com/solana-launches-new-token-extensions-here-are-the-details/
+
+https://ndax.io/en/blog/article/tangibles-and-tech-exploring-the-rwa-and-de-pin-landscape
+
+https://www.openrwa.io/blog/regulatory-landscape-of-rwa-tokenization-what-investors-need-to-know
+
+https://www.deloitte.com/lu/en/Industries/investment-management/perspectives/mica-a-new-major-milestone-in-your-crypto-asset-transformation-journey.html
+
+https://cointelegraph.com/news/finance-sector-group-urges-sec-to-reject-exemption-for-tokenized-stocks
+
+https://www.prnewswire.com/news-releases/solana-network-unveils-token-extensions-empowering-financial-institutions-and-enterprise-grade-businesses-to-enter-web3-302042625.html
+
+https://www.blockchainappfactory.com/blog/how-does-the-integration-of-rwa-tokenization-and-depin-revolutionize-digital-asset-transactions/
+
+https://solanacompass.com/learn/Superteam/the-solana-ecosystem-call-may-2025
+
+https://cryptoslate.com/5-most-rapidly-growing-tokenization-trends-to-watch-for-in-2025/
+
+https://cryptoslate.com/press-releases/digicask-debuts-tokenized-whisky-casks-on-solana-expanding-accessibility-in-the-75-billion-global-whisky-market/
+
+https://solana.com/uk/news/solana-permissioned-environments-spe-introduction
+
+https://www.bitget.com/news/detail/12560604528915
+
+https://github.com/dOrgTech/homebase-dao-deployer
+
+https://solanacompass.com/learn/Lightspeed/why-businesses-are-building-on-solana-baxus-tzvi-wiesel
+
+https://solana.com/developers/guides/permissioned-environments
+
+https://www.coingecko.com/research/publications/solana-vs-ethereum-2025
+
+https://coingeek.com/rwa-tokenization-to-hit-50-billion-in-2025-report/
+
+https://github.com/dOrgTech/homebase-app
+
+https://note.com/solana_japan/n/n5fa61cf8ff9c
+
+https://electroiq.com/stats/solana-statistics/
+
+https://www.einpresswire.com/article/820398376/key-trend-in-asset-tokenization-market-2025-blockchain-platforms-driving-security-efficiency-revolution
+
+https://www.prnewswire.com/news-releases/10-billion-in-real-estate-and-200-000-onchain-addresses-on-propy-dapp-ready-for-tokenization-302200945.html
+
+https://chainwire.org/2024/05/02/digicask-debuts-tokenized-whisky-casks-on-solana-expanding-accessibility-in-the-75-billion-global-whisky-market/
+
+https://note.com/standenglish/n/n8f2fcac52fd1
+
+https://www.blockchainappfactory.com/blog/rwa-tokenization-2025-key-trends-use-cases/
+
+https://blog.tbrc.info/2025/02/tokenization-market-size/
+
+https://www.linkedin.com/pulse/scalingreal-world-assets-defi-challenges-involved-muthe
+
+https://www.blockhead.co/2024/04/05/central-banks-join-forces-to-revolutionize-cross-border-payments-via-tokenization/
+
+https://blockchain.news/flashnews/rwa-tokenization-analysis-10-key-drivers-pushing-institutional-adoption-on-chain
+
+https://web.ourcryptotalk.com/blog/top-10-rwa-projects-2025
+
+https://hackernoon.com/navigating-the-future-8-tokenization-trends-and-predictions-for-2024
+
+https://coincu.com/205716-real-world-assets-rwas-integrated-defi-protocols/
+
+https://www.macroglobal.co.uk/blog/financial-technology/cross-border-payments-tokenization/
+
+https://cointelegraph.com/news/institutions-rwa-tokenization-investment
+
+https://www.osl.com/hk-en/academy/article/real-world-assets-on-blockchain-why-rwa-matters-in-2025
+
+https://www.ledgerinsights.com/bcg-ripple-predict-tokenization-to-reach-18-9-trillion-by-2033/
+
+https://aurum.law/newsroom/Real-World-Assets-in-DeFi
+
+https://www.paxos.com/blog/tokenization-and-cross-border-payments
+
+https://www.ainvest.com/news/rwa-tokenization-market-surges-800-65-billion-driven-institutional-adoption-2507/
+
+https://tangem.com/en/blog/post/real-world-assets-rwa/
+
+https://www.thebusinessresearchcompany.com/market-insights/tokenization-market-overview-2025
+
+https://forum.algorand.org/t/how-real-world-assets-can-transform-defi/10944
+
+https://publications.iadb.org/en/cross-border-payments-blockchain
+
+https://www.ainvest.com/news/real-world-assets-market-surges-800-65-billion-institutional-adoption-2507/
+
+Subscribe to ariel
+Launched 11 days ago
+Working
+Subscribe
+By subscribing, I agree to Substack's Terms of Use, and acknowledge its Information Collection Notice and Privacy Policy.

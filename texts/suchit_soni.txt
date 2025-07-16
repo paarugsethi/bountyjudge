@@ -1,0 +1,197 @@
+Open in app
+
+Sign up
+
+Sign in
+
+Write The State of Real‑World Assets on Solana: Tokenizing the Physical Economy
+suchit
+Follow
+7 min read
+·
+Jul 6, 2025
+
+“Tokenization is the next evolution for markets.”
+- Larry Fink, CEO of BlackRock
+
+Why Tokenize the Real World?
+
+Imagine savoring a coffee in Tokyo and deciding to own a slice of the Empire State Building. Not the whole tower — just a tiny fraction earning you rental income.
+
+Now, picture a Brazilian farmer who needs cash to plant his next soybean crop. Instead of waiting months for a bank loan, he locks his land into a smart contract and receives funds in seconds. 🂰
+
+Real-world assets (RWA) are digital tokens that represent physical or traditional assets, including real estate, commodities, government bonds, and other tangible assets. Tokenization transforms a house deed or farmland title into many tradable digital “shares,” making once‑illiquid assets as easy to move as an email.
+
+Fractional Ownership
+Invest with as little as $100 in prime real estate or blue‑chip bonds.
+Instant Settlement
+Funds transfer in seconds, bypassing banks and brokers.
+Global Reach
+A farmer in Africa sells tokenized coffee beans to a café in Europe instantly.
+https://www.coingecko.com/research/publications/fastest-blockchains
+
+Solana network handles up to 65,000 transactions per second with fees around $0.00025 — versus $10+ on other chains — making it the perfect on‑ramp for the physical economy.
+
+Solana RWA Boom: By the Numbers
+The growth of RWAs on Solana is jaw-dropping. Here’s the data:
+Global RWA Market Cap: $5B (2022) to $24B (2025) — 380% growth
+Tokenized U.S. T-Bills: $100M to $7.5B — 7,400% growth
+Solana RWA Assets: 12 to 79–558% growth
+Non-Stablecoin TVL: $28M to $415M — 1,382% growth
+Stablecoin TVL: $10.1B
+Unique RWA Holders: 9,300 to 55,800–498% growth
+https://app.rwa.xyz/networks
+
+Key Metrics:
+
+RWA tokenization grew from $5 billion in 2022 to $24 billion by June 2025, a 380% increase.
+Tokenized Treasury bills expanded from $100 million in January 2023 to $7.5 billion by June 2025, showcasing institutional demand.
+Solana’s transaction volume per holder is approximately $40 million, the highest among major blockchains.
+Total tokenized RWA assets reached $240 billion globally, with Solana capturing a significant share.
+Trends and Analysis: Solana’s leadership in transaction volume per holder underscores its scalability, powered by Proof of History (PoH) and Proof of Stake (PoS). These enable high throughput and ultra-low costs, ideal for RWA applications. Institutional adoption, like BlackRock and Franklin Templeton’s tokenized funds, signals a shift toward blockchain-based asset management.
+Stablecoins power liquidity and treasuries hold 68% of RWA value. But here’s a trend: real estate could overtake treasuries by 2027, with TVL up 200% in 2024 and platforms like Homebase drawing retail investors.
+Trailblazing Projects & Partnerships
+BlackRock’s BUIDL : BlackRock, the world’s largest asset manager, launched BUIDL on Solana in 2025. It’s a tokenized money market fund that lets investors earn yields on stablecoins by investing in U.S. Treasury bonds. This is huge — it’s a sign that traditional finance (TradFi) is jumping into blockchain.
+https://app.rwa.xyz/treasuries
+Franklin Templeton’s FOBXX: Another TradFi titan, Franklin Templeton, brought its OnChain U.S. Government Money Fund (FOBXX) to Solana. With over $700 million in assets, it’s a tokenized fund holding government securities, offering a safe and liquid option for investors.
+Ondo Finance’s USDY and OUSG: Ondo is a star in tokenized treasuries. USDY is a yield-bearing stablecoin backed by U.S. Treasuries, with a market cap of over $120 million. OUSG offers exposure to short-term Treasuries, both running on Solana’s fast network.
+Maple Finance: Maple connects lenders and borrowers in a decentralized credit marketplace. On Solana, they’ve launched a cash management product, letting users lend USDC to institutions like Room40 Capital. It raked in $4.2 million in just days.
+Homebase
+Homebase enables anyone to invest in real estate for as little as $100 and is currently tokenizing properties in the US. It has sold two tokenized properties worth more than $400k and is still in the very early stages!
+Kraken xStocks: Kraken’s launch of xStocks on the Solana blockchain marks a significant leap in decentralized finance, enabling users to trade tokenized versions of U.S. stocks like Tesla and Nvidia 24/7. Unlike traditional markets, xStocks offers self-custody, allowing investors to retain control of their assets via Solana’s high-speed network, which processes up to 65,000 transactions per second. Backed by real-world securities with a 1:1 peg, these tokens integrate seamlessly with DeFi protocols, enabling liquidity provision on DEXes. Announced at Solana Accelerate 2025, this move targets non-U.S. markets initially, with plans to expand globally, challenging conventional equity trading with lower costs and transparency.
+https://xstocks.com/
+
+Tokenized Tesla and Apple shares, tradeable anytime on Solana.
+
+R3 Corda Bridge: R3’s Corda, a private blockchain for banks, now connects to Solana. This bridge lets assets move between private and public blockchains, opening the door for institutional adoption.
+Jupiter–AIX Dual‑Listings: Jupiter, a Solana-based aggregator, partnered with AIX to enable dual listings of RWAs, boosting liquidity and trading options.
+https://x.com/JupiterExchange/status/1928122222960328748
+CarbonCure
+A niche player tokenizing carbon credits, aligning RWAs with sustainability.
+
+Mini‑Case Study:
+Mariana, our farmer in Brazil, tapped Ondo Finance’s USDY to collateralize her next harvest. By tokenizing $50 K of crops, she unlocked $47 K in instant liquidity — enough to pay labor and seeds — versus a 45‑day approval cycle at 12% APR from her local bank.
+
+Solana’s RWA Ecosystem Mapped
+Tokenized Treasuries: BlackRock, Franklin Templeton, Ondo, VanEck — stable yield leaders (68% of TVL).
+Private Credit: Credix, Maple, Goldfinch — fast loans for businesses.
+Equities: Kraken xStocks, Jupiter–AIX — 24/7 stock trading.
+Real Estate: Homebase, Parcl, Roofstock — liquid property for all (200% TVL growth in 2024).
+Commodities: AgriDex, VNX (gold), Paxos — global trade assets.
+Collectibles: Baxus (whisky), Tiamonds (diamonds) — unique investments.
+
+Treasuries lead, but real estate and credit surge, while collectibles add flair.
+
+Global Regulation: Where RWAs Thrive
+United States (SEC)
+The Howey Test still looms over token offerings, making institutional issuers tread carefully.
+European Union (MiCA)
+Markets in the Crypto‑Assets framework standardize custody and issuance, fast‑tracking adoption.
+Singapore (MAS)
+“Project Guardian” sandbox hosts 80+ pilots; banks like UBS are live with tokenized bonds.
+Dubai (VARA)
+Crypto‑friendly licensing is drawing asset managers such as Fidelity and Franklin Templeton.
+India (IFSCA)
+GIFT City’s new rules aim to transform it into a regional tokenized bond hub.
+United Kingdom (FCA)
+The Financial Conduct Authority is exploring “digital settlement sandboxes for tokenized securities.
+
+Regulators are shifting to “make it work,” with Chainlink’s compliance oracles (like bank receipts for gold) standardizing trust. Tokenized bonds could hit $50B by 2027, per McKinsey’s $2T forecast.
+
+Future Opportunities: Solana’s Superpowers
+
+What’s next for RWAs on Solana? Its speed and low fees open up exciting possibilities. Here are some ideas:
+
+Fractional Real Estate: Buy a slice of a rental property and earn rent. Solana’s efficiency makes this affordable for small investors.
+Supply-Chain Finance: A Colombian farmer tokenizes coffee on AgriDex, secures a $10,000 loan instantly, and repays post-harvest a $9T opportunity.
+On-Chain ETFs: Tokenized ETFs are traded 24/7, offering more flexibility than traditional funds.A token bundles T-bills, gold, and real estate, tradable on Raydium with automated yields.
+DeFi Collateral: MakerDAO’s $1B pilot using tokenized RWAs suggests a new era for stablecoins backed by real‑world collateral.
+
+While treasuries will continue to dominate, I believe supply‑chain finance will outpace them by sheer transaction volume — Solana’s speed and low fees make micro‑loans economically viable at scale.
+
+Challenges & Solana’s Edge 🏁
+Liquidity Gaps: Niche assets need deeper markets.
+Compliance vs. Privacy: KYC requirements clash with DeFi’s pseudonymity.
+Oracle Integrity: Verifying off‑chain assets remains a technical battleground.
+
+Why Solana Wins:
+
+Cost: $0.00025 per tx opens tokenization to high‑value assets.
+Speed: 65K TPS prevents issuance bottlenecks and flash‑loan exploits.
+Ecosystem: Mature oracles (Pyth, Switchboard), tooling (Anchor, SPL Token), and institutional rails.
+
+“You can’t tokenize a $500 M skyscraper on a $5‑fee network.”
+— Anatoly Yakovenko, Solana co‑founder
+
+Conclusion: A New Financial Frontier
+
+The tokenization of Real‑World Assets is not just a technological novelty — it’s a paradigm shift in how value moves, is owned, and grows. Solana’s architectural strengths — speed, affordability, and a rapidly expanding suite of developer tools — position it as the premier chain for RWAs.
+
+Whether you’re a developer eager to build the next fractional RE platform, an institution exploring tokenized bonds, or an investor seeking diversified yield, Solana’s RWA ecosystem offers unmatched opportunity. As regulation crystallizes and liquidity deepens, the next wave of users — beyond crypto‑natives — will flock to tokenized assets, ushering in a truly global, inclusive financial system.
+
+Developers: Explore the Solana Program Library’s tokenization modules to launch your RWA project.
+Institutions: Pilot tokenized debt or equity through established partners like Ondo or Maple.
+Investors: Start small — pilot a $100 position in a tokenized treasury to experience instant settlement.
+
+Provocation:
+
+If you had to build one RWA product on Solana today, what would it be — and why? Drop your idea in the comments!
+
+The physical and digital economies are converging, and Solana is leading the traffic.
+
+References
+RWA.xyz Network Metrics: https://app.rwa.xyz/networks/solana
+RWA assets in onchain finance report: https://blog.redstone.finance/2025/06/26/real-world-assets-in-onchain-finance-report/
+Reflexivity Research: https://reflexivityresearch.com
+Solana Foundation: https://solana.com/foundation
+IFSCA Consultation Paper: https://ifsCA.gov.in
+Helius RWA Overview: https://helius.xyz/rwa-overview
+https://yashhsm.medium.com/state-of-real-world- suchitThe State of Solana Developer Tooling in 2025 to Build the FutureIntroduction: From Momentum to Maturity2d ago suchit
+
+The State of Solana Developer Tooling in 2025 to Build the Future
+Introduction: From Momentum to Maturity
+2d ago JF
+
+Silicon Shock: Navigating Job Cuts and Economic Crossroads in 2025
+In a world increasingly driven by innovation, the name “Silicon Valley” has long been synonymous with opportunity, growth, and progress…
+Jun 14
+18 In
+
+Predict
+
+by
+
+iswarya writes
+
+GPT-5 Is Coming in July 2025 — And Everything Will Change
+“It’s wild watching people use ChatGPT… knowing what’s coming.”  — OpenAI insider
+Jul 8
+5.3K
+130 CoinPedia Markets
+
+Top 7 Altcoins to Buy Under $1 in July 2025
+The cryptocurrency market is showing bullish signals today. Bitcoin surpassed the $118,000 mark (+5.71%), a new all-time high on July 11…
+5d ago
+95
+5 Farming
+
+Hydroponics vs. Soil Farming: Which is More Sustainable?
+1. Introduction: The Farming Revolution on Our Doorstep
+Jul 5
+4 Ashka Jadhav
+
+Azolla- Green Gold for Indian Farmers.
+I had the privilege of working at BAIF Foundation as an intern for the last three weeks. When we went on our field trip to BAIF’s main…
+Jun 21 In
+
+InsiderFinance Wire
+
+by
+
+Kabilan Thavabalalingam
+
+How I Print Money Daily with This Simple Options Strategy
+A step-by-step guide to making $25-$50 daily
+Jul 9
+201
+15

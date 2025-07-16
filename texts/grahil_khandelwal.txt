@@ -1,0 +1,395 @@
+Discover more from Grahil’s Substack
+My personal Substack
+Subscribe
+By subscribing, I agree to Substack's Terms of Use, and acknowledge its Information Collection Notice and Privacy Policy.
+Already have an account? Sign in
+State of RWAs in Solana
+Exploring how Solana is making traditional finance a lot less… traditional
+GRAHIL KHANDELWAL AND VINAY SHARMA
+JUL 06, 2025
+Share
+
+If you had to pick the top 3 sectors in blockchain that gonna impact the future big time, Real World Assets (RWAs) probably comes at the top. But like, what even is RWA, and why Boston Consulting Group saying it's gonna be a $16 trillion market by 2030?
+
+RWAs are basically old-school financial assets like currencies, real estate, government bonds, private credits, or even stuff like paintings, whisky, wine etc that’s getting tokenised and brought on chain. Tokenisation just means turning these things into digital tokens so they can be shown and moved around on chain.
+
+In this article, we will dive deeper into the RWA scene on Solana, discuss various categories and projects, Institutional Adoption & key partnerships in recent times, discuss the regulatory landscape in various countries for RWAs, and also discuss about various future outlook and opportunities in RWA sector.
+
+Source: app.rwa.xyz
+
+In recent years, the RWA tokenisation scene exploded from $5B in 2022 to over $24B by June 2025, which is around 380% which is quite big compared to the growth we had as an industry. RWAs are one of the fastest-growing sectors in crypto, after stablecoins, in the last few years. One of the biggest contributors to these numbers comes from tokenised U.S. Treasury bills, which have raised from $100 million at the start of 2023 to roughly $7.5 billion by mid-2025.
+
+But now the question arises, what are the actual benefits of tokenising Real World Assets(RWAs)?
+
+Global Accessibility: RWAs, let countries open up their assets to the world, not just keep them stuck within borders.
+
+Like, imagine a Nigerian businessman putting money into a property in the U.S. without dealing with tons of paperwork or stress. Blockchain makes that possible. That’s kinda the whole point of crypto, right? Making it easy for anyone, anywhere, to invest.
+
+24*7 Market: TradeFi operates only 5 days a week for a limited number of hours, and also has shops closed on various public and bank holidays. These holidays and lack of tradeFi not being a 24*7 industry cause billions of dollars every day. Unlike Tradefi, tokenised assets will be available around the clock as Crypto is a 24*7 market.
+
+Programmable: By turning assets into tokens, they become programmable and traceable, allowing financial contract terms to be executed automatically without manual intervention.
+
+Transparency: Well, putting an asset on chain comes with one of the best perks, i.e., real-time traceability and ownership history. This will help boost the complete system and help track and remove bad actors from the system.
+
+Fractionalisation: Fractionalisation of an asset will allow anyone to take part in holding a piece of an important RWA.
+
+Composable: Once created, an RWA can be used on various applications, such as asset/collateral, or more, and can be involved in various Defi activities on various platforms.
+
+There are a lot more benefits, like operational efficiency, more liquidity access, etc., of tokenising a real-world asset and bringing it on-chain.
+
+Growth in the RWAs
+
+In 2023, Yash Agarwal wrote a State of RWAs in 2023. In the article, he demonstrated the state of RWAs at that time.
+
+State of RWAs in 2023
+
+Currently, the space has seen exponential adoption. Recently, the launch of stocks has made it clear that tokenised Stocks are gonna get adopted by the community. The launch of BUIDL by BlackRock and Benji by Franklin Templeton reinforces the growing momentum behind tokenised real-world assets.
+
+Here is the current trend in the RWA adoption in 2025, inspired by Yash’s diagram.
+
+State of RWAs in 2025
+Why Solana for RWAs?
+
+Solana is currently leading the charts for RWAs, with various companies prioritising Solana over others to tokenise assets. Solana offers various benefits that others can’t:
+
+High speed, low gas fees: For use cases like RWAs, we need very high speed with minimal cost to transact assets, and Solana offers exactly that. Solana offers low gas fees(~0.00025), sub-second finality, and very high transactions per second(TPS), making it a perfect fit for various RWA-related activities.
+
+Large Volume Transaction Capability: The scalability of Solana addresses a core requirement for RWAs: the ability to process large volumes of transactions (for markets like bonds or forex) quickly and cheaply, something legacy chains like Ethereum struggle with due to higher latency and costs.
+
+Solana Architecture: Solana offers a unique and powerful architecture, a single global state, and fast finality that enables near real-time settlement, which is crucial when bringing 24/7 liquidity to traditionally illiquid assets like bonds or real estate.
+
+Along with the technical edge, Solana also offers its robust infrastructure support and unbeatable ecosystem support, which makes it the top choice for institutions to move to Solana for RWA tokenisations.
+
+Source: app.rwa.xyz
+
+Solana RWA Value stands at the $413.60M at the time of writing this article. We 50000+ RWA holders a staggering 600% growth in the last 30 days.
+
+Stablecoin holders have also increased to 10.35M with $10B+ in stablecoin market cap.
+
+RWA’s platforms on Solana have gained very good momentum in the last few years. With around 10 projects(except stablecoins) actively building on RWAs in the Solana ecosystem in 2023, we now have 20+ projects actively building in Solana RWAs, along with some notable partnerships with Tradefi, which is making Solana very attractive for most institutions out there.
+
+Let’s discuss various Solana projects in each category.
+
+Stablecoins
+
+Stablecoins are the largest and most successful Real World Asset (RWA) in crypto by every metric. Although it is not counted as RWA. Backed mostly 1:1 by fiat currencies, they offer stability, utility, and seamless integration with traditional finance. Regulatory frameworks like the U.S. GENIUS Act and Europe’s MiCA have further legitimised their role in the global financial system.
+
+The stablecoins on Solana is dominated by two fiat-backed giants: USDT and USDC, (approx - 98%) in which USDC is ~70%. According to Pantera (late 2024), Solana drove over 90% of new DEX token launches, mostly paired with USDC.
+
+Distribution of stablecoin on Solana
+
+Meanwhile, PayPal's PYUSD went live on Solana in mid-2024 and saw rapid growth reaching $240M in circulation within two months and accounting for 11% of Solana’s total stablecoin supply.
+
+The recent surge in launchpad activity has been a key driver behind the growing stablecoin adoption on Solana. One notable addition is USDY, a yield-bearing stablecoin that lets users earn interest simply by holding it now live on Solana and quickly gaining traction across DeFi protocols.
+
+Source: Helius Blog
+
+Solana is becoming the hubspot of the Stablecoins. The Supply of the stablecoin is Over $10B on Solana making it the most liquid ecosystem in Crypto.
+
+You can refer here to we have written a deep dive on Stablecoins on Solana.
+
+Equities
+
+Bringing equities (ownership in a company) on-chain is one of the hottest narratives brewing in the Real World Assets( RWAs) sector in 2025. As of early 2025, the global equity market spans nearly 48,000 publicly listed companies with a combined market capitalization of around $124 trillion.
+
+Solana is now bringing the equity landscape on-chain.
+
+There are various projects that are building this:
+
+xStocks by Kraken
+
+During the Solana Accelerate conference in May 2025, Kraken announced xStocks, which offers permissionless, self-custodied access to some of the world’s most in-demand securities.
+
+xStocks are tokenised tracker certificates representing over 55 of the most popular U.S.-listed stocks and exchange-traded funds (ETFs), issued as SPL tokens on the Solana blockchain.
+
+Recently, we bought the TSLA stock with fartcoin. Can you imagine?
+
+The launch of xStocks was a banger. With the 2 days of launch, the Total number of tokenised stocks has increased 1000%+ in 2 days, from 4400 to more than 40000.
+
+Growth of Tokenized stocks holders
+
+The total volume and active addresses have also seen a massive jump. You can refer to the charts below. (Source: app.rwa.xyz)
+
+Tokenised Stock’s active addresses on Solana.
+Tokenised Stock’s Volume on Solana
+
+Securitize
+
+Securitize is one of the biggest players bringing real-world assets on-chain, and it's now actively building on Solana. Known for working with giants like BlackRock and Apollo, Securitize has helped tokenise over $4 billion in assets, including BlackRock’s BUIDL fund (currently managing around $1.7 billion).
+
+On Solana alone, Securitize has issued about $65 million worth of RWAs across three assets roughly 1.9% of the network’s total RWA value. In March 2025, it launched a dedicated Solana share class for the BUIDL fund, giving users fast, low-cost, 24/7 access to tokenised USD yields. With added support from RedStone for real-time oracles and Wormhole for cross-chain transfers, Securitize is helping make institutional-grade investment products more accessible and composable in the Solana DeFi ecosystem.
+
+Ondo Global Markets
+
+Ondo Global Markets (Ondo GM) is a new initiative by Ondo Finance to provide international users with on-chain access to U.S. public markets. Ondo GM will enable access to US stocks, ETFs, and mutual funds.
+
+The tokens, like tTSLA, represent 1:1-backed assets and can be used across Solana DeFi while remaining compliant with transfer restrictions. To scale this effort, Ondo has formed a Global Markets Alliance with key crypto ecosystem players to establish common standards around security tokens, interoperability, and investor safety.
+
+Remora
+
+Remora(currently under development) will allow users to purchase full or fractional shares of major US-listed stocks such as TSLA, AAPL, COIN and NVDA, directly on chain. Each stock (issued as SPL tokens) can also be used in various Defi activities like LP pool Liquidity, collateral in lending protocols, etc.,
+
+Source: remoramarkets.xyz
+Real Estate
+
+The most recent comprehensive estimate puts the total global real estate value at around $380 trillion, which makes it the world’s largest asset class.
+
+A few of the top projects in real estate, brewing on Solana are:
+
+PARCL
+
+Parcl lets you get exposure to the real estate market without actually owning any property.
+
+Instead of buying a house or an apartment, you can trade synthetic positions based on the price of real estate in different cities or neighbourhoods. These prices are shown in real-time as cost per square foot or meter, so you're basically betting on whether property values in certain area will go up or down.
+
+Parcl currently supports 34 real estate markets and has surpassed $10 million in total value locked (TVL).
+
+Parcl is in the top 10 RWA projects via Trading Volume last month.
+
+Data Source: Coin Market Cap
+
+Metawealth
+
+MetaWealth is a real estate investment platform on Solana that enables users to invest fractionally in properties across Europe for as little as $100. Since moving to Solana, it has processed over $35 million in tokenized property deals across countries like Spain, Italy, Greece, and Romania, serving more than 50,000 investors and listing 138 tokenized assets. The platform has also crossed $1 million in rental income payouts, with over $37,000 distributed in the last month alone entirely in USDC on Solana.
+
+Recently, Prague-based fund manager APS, with €12B AUM, became the first institution to buy $3.4M worth of tokenised Italian real estate via Metawealth.
+
+Homebase
+
+Homebase is a real estate tokenisation platform built on Solana that enables fractional ownership of residential properties through NFTs with as low as $100.
+
+Homebase was one of the first Solana real estate platforms, allowing investors (currently U.S. residents only) to purchase fractional shares of physical rental properties via NFTs. Homebase sets up an LLC for each property, tokenises the ownership as NFTs, and lets users buy in with as little as $100.
+
+Rental income is collected in USD, converted to USDC, and distributed monthly to NFT holders as yield. By 2023, Homebase had successfully tokenised and sold out two residential properties in Texas (worth >$400k) on Solana. Ownership is represented as NFTs and are tradable on the Homebase marketplace.
+
+Tokenised Bonds and Private Equity
+
+Between 2023 and 2025, Solana saw a surge of products tokenizing government bond bringing some of the world’s most trusted debt instruments on-chain.
+
+A few of the top tokenised assests projects building on Solana are:
+
+Centrifuge
+
+Centrifuge in May 2025, they launched new products on Solana, expanding their RWA footprint into the high-speed, low-cost ecosystem. These bond-backed tokens follow Centrifuge’s deRWA standard, making them transferable and DeFi-ready. From launch, deJTRSY was integrated into Solana protocols like Raydium, Kamino, and Lulo for trading, lending, and yield strategies. Centrifuge partners with @SPDJIndices to Bring S&P 500 0n chain.
+
+Etherfuse
+
+Etherfuse’s StableBond is bringing Mexican government bonds (CETES) on-chain via Solana, enabling retail investors to access T-bills through fractional tokens. In Europe, Backed and VNX have also issued Solana-based tokens representing European government bonds and corporate bond ETFs.
+
+Private Credits and Loans
+
+By early 2025, the market of Private credit had reached between $2 trillion AUM, doubling from around $1 trillion in 2020. Solana is quickly becoming a key player in this space.
+Here are some of the leading project building for Private credit and loans on Solana:
+
+Maple Finance
+
+Maple Finance is a leading institutional lending platform that surpassed $1B in TVL by mid-2025, launched its high-yield syrupUSDC stablecoin on Solana with $30M in liquidity, and is rapidly expanding its RWA footprint while generating over $1M in In this year it grew from ~$470 million at the start of 2025 to nearly $1.9 billion, driven by real-world credit and institutional finance.
+
+Credix Finance
+
+Credix Finance is bringing real-world private loans on-chain. It connects institutional and accredited investors through USDC-based pools or specific deals with fintech lenders and borrowers get USDC, swap it for local currency, and repay the loans using receivables or other forms of collateral.
+
+As of May 30, 2025, Credix Finance—Solana’s leading private‑credit RWA protocol—has a total value locked (TVL) of just under $60 K on-chain in loans, with approximately $11.1 M borrowed through its platform. (Source: Defilama)
+
+Commodities
+
+The total nominal value of the global commodities market is estimated to be around $140 trillion. Commodities are one of the most underexplored but high-potential verticals for tokenization on Solana.
+
+Imagine gold, silver, oil, or even agricultural goods being represented as on-chain tokens that can be traded, lent, or used as collateral instantly and globally.
+Even if we are able to tokenise 0.1 percent of total global commodities, it would be $140 billion dollars. For comparison the the current solana market cap is ~81 billion dollars.
+
+dVIN Labs
+
+dVIN is building a decentralised infrastructure for the $1T wine industry by tokenising bottles and streamlining the fragmented supply chain. Using its unique Digital Cork NFTs on Solana, each wine bottle is authenticated, tracked, and linked to on-chain metadata.
+
+When consumed, the NFT is burned and replaced with a Tasting Token, unlocking rewards like VinCoin loyalty points. With over 70 winery pilots and $2M in tokenized wine, dVIN brings transparency, fraud prevention, and new engagement models to wine producers and collectors.
+
+AgriDEX
+
+AgriDex is making it easier than ever to invest in real agriculture by bringing the entire industry on-chain through Solana. From coffee and olive oil to farmland, the platform lets users trade tokenised versions of these real-world assets with near-instant settlement and super low fees of around 0.5 per cent, compared to the usual 3 to 6 per cent in traditional markets
+
+They’ve already pulled off real trades, including a $165,000 farmland deal in Zambia and on-chain sales of coffee and olive oil. Backed by $5 million in early funding and powered by their native token AGRI, AgriDex is starting to build real momentum. The token trades around $0.03 with a market cap of $6.5 million, and with Solana’s speed and cost efficiency behind it, AgriDex is shaping up to be a serious force in the future of tokenised agriculture.
+
+The founder of Agridex has recently done a podcast with Superteam India.
+
+BAXUS
+
+BAXUS is making it easy for anyone to invest in rare wines and spirits by turning collectable bottles into NFTs on Solana. It runs on a custodial model, storing all bottles in secure, insured, climate-controlled vaults ensuring authenticity, proper storage, and peace of mind for investors.
+
+Recently, BAXUS has sold a bottle of whiskey for $22,000.
+
+This setup also makes it easy to resell bottles. BAXUS tackles major pain points in the spirits market: it adds liquidity to a market where rare bottles were once sold only via auctions, introduces transparent pricing in place of fragmented valuations, and unlocks capital efficiency by letting users borrow USDC against their holdings.
+
+ORO
+
+ORO is rethinking how gold works in today’s digital world by bringing it on-chain with Solana. With $1.5 million in early funding from investors like 468 Capital and Fasset, the project is doing more than just putting gold on the blockchain, it's turning it into something that actually earns for you.
+
+
+They teamed up with Monetary Metals to launch the first gold token on Solana that pays yield, so instead of your gold just sitting there, it can now earn you interest. The gold is real and kept in secure vaults, and Solana helps with fast and cheap transactions. It’s a modern spin on one of the oldest assets we know, blending trust and new tech together.
+
+Power Ledger
+
+Power Ledger: The power ledger uses renewable energy credits and environmental commodities and tokenises theme with utility companies KEPCO(Japan) and Wnergie Steiemark (Austria)
+
+Solana Tech & Infra for RWA
+
+Solana has been building a robust infrastructure to support the tokenization of real-world assets(RWAs). It has built-in tooling that looks appealing to institutions.
+
+Programmable tokens and permissioned environments: Solana’s support for programmable tokens and permissioned environments allows compliance rules (like KYC/whitelisting or transfer restrictions) to be embedded at the token level. These features let issuers create tokens that only approved investors can hold or trade, satisfying regulatory requirements for securities.
+
+Compressed NFTs(cNFTs): The Solana ecosystem also offers compressed NFTs (cNFTs) for efficient bulk minting of asset tokens, and a growing suite of DeFi infrastructure (DEXs, lending protocols, etc.) that can integrate with RWAs.
+
+Multi-chain strategy: Solana has embraced a multi-chain strategy for RWAs. Many asset tokenization efforts span multiple networks, for instance, a fund might accept deposits on Ethereum but use Solana for execution, to tap its speed. This multi-chain strategy is acting as a good catalyst, as now developers and institutions increasingly view Solana as a viable base for RWA markets alongside Ethereum.
+
+Institutional Adoption and Key Partnerships
+
+Institutions are bullish on Solana RWAs, which can also be justified by the major financial institutions and strategic partnerships geared towards tokenisation on Solana. In the last 2 years, some of the biggest institutions announced their integration with Solana's first initiative.
+
+R3 ‘s Corda Integration with Solana
+
+In recent weeks, one of the most bullish partnerships around Solana RWAs is R3 partnering with the Solana Foundation. R3 is an enterprise blockchain firm whose Corda platform is used by 500+ financial institutions and is a permissioned distributed ledger popular among banks (for example, it’s used by HSBC, NASDAQ, Euroclear, and others to settle bond trades and tokenized assets).
+
+R3 has facilitated over $10 billion in regulated assets on chain within the private network, and now they are bridging on Solana.
+
+R3 and Solana are developing an “enterprise-grade permissioned consensus” service on Solana’s mainnet. This will allow private Corda transactions to be confirmed on Solana in a secure, isolated manner, effectively connecting private banks' networks to the public Solana blockchain.
+
+In simple words, this integration means assets tokenised on Corda can be represented on Solana and take advantage of Solana’s liquidity and settlement finality.
+
+R3 even invited Lily Liu, President of Solana Foundation, to join R3’s Board, underscoring the strategic importance.
+
+So this means, with this partnership, Solana will be getting exposure to 500+ financial Institutions(still need reason to be bullish on Solana RWAs?)
+
+Corda-based private networks dominate the RWA space (Data sources: rwa.xyz and R3 networks); Image Source: Helius Blog
+
+As already mentioned earlier in the article, two of the world’s largest asset managers chose Solana for their landmark onchain funds.
+
+BlackRock’s $BUIDL
+
+In late 2023, BlackRock’s iShares unit launched the $BUIDL fund(a tokenised money market fund for U.S. Treasuries) and, in Q1 2025, made it available on Solana.
+
+By March 2025, BUIDL’s on-chain AUM had grown to $1.7B, and it has since climbed toward $2.9B. Holders of the BUIDL token get exposure to a conservative, yield-generating fund managed by BlackRock, with the convenience of on-chain settlement and 24/7 liquidity.
+
+Franklin Templeton
+
+Franklin Templeton’s OnChain U.S. Government Money Fund (FOBXX) also expanded to Solana in February 2025. Franklin’s fund was already live on Stellar and had grown to about $594M (making it the third-largest tokenised fund). By adding Solana support, Franklin opened its fund to Solana’s user base and DeFi apps. Solana’s rising interest from tokenisation issuers is what influenced Franklin’s decision.
+
+Two of the world’s biggest asset managers are coming to Solana, bringing big credibility to Solana and its RWA ecosystem. This also shows that Institutions are aligning with the crypto industry and they are making their first move with the best, i.e, Solana.
+
+Hamilton Lane
+
+In 2024, Hamilton Lane, a $800B private markets investment firm, brought a portion of its flagship private equity fund (the $556M SCOPE Fund) on-chain via the Libre platform on Solana.
+
+Libre, a joint venture involving Hamilton Lane, Nomura’s Laser Digital, and crypto firm Brevan Howard Web3 (WebN), is rolling out a suite of tokenized funds on Solana.
+
+These include the SCOPE private equity fund (which targets ~10% annual yield for USD investors) and a tokenised feeder into Brevan Howard’s Master Fund (a prominent global macro hedge fund).
+
+By mid-2024, Libre had quietly accumulated nearly $20M TVL pre-launch in anticipation of these offerings.
+
+Libre also plans to offer a secondary trading venue for its fund tokens, likely using Solana’s order-book DEX infrastructure to enable liquidity for fund investors.
+
+FYI: Nomuras is a major Japanese bank and Brevan Howard is a leading hedge fund.
+
+Apollo and Securitize
+
+In early 2025, Apollo Global Management, one of the world’s largest alternative asset managers, partnered with digital securities platform Securitize to tokenise a $1.3B private credit fund.
+
+The tokenized fund (Apollo’s Credit Fund) was brought to Solana via Wormhole(bridge). This move stands out because Apollo’s fund was originally launched on another blockchain (Polygon or Ethereum), but they utilised Wormhole to create Solana-wrapped tokens for it
+
+Solana x Jupiter x Astana x Intebix
+
+In May 2025, Solana Foundation and Jupiter Exchange (Solana-based DEX aggregator) teamed up with the Astana International Exchange (AIX), which is Kazakhstan’s stock exchange, and Intebix (a fintech), signed an MOU to develop dual listings for equities. The idea is that a company could do a conventional IPO on the AIX stock market in Kazakhstan while simultaneously issuing a tokenized version of its shares on Solana (with Intebix handling tokenization and Jupiter providing on-chain liquidity tools). This hybrid model would allow the same stock to trade in parallel: on AIX in traditional form and on Solana as a regulated security token.
+
+The fact that an international stock exchange sees value in Solana for listings speaks volumes about how far the tech has come. It suggests a future where buying shares in an IPO might involve interacting with Solana wallets alongside traditional brokerage accounts.
+
+The partnerships we have discussed above are just the tip of the iceberg. A lot more is happening on Solana than this; we just picked a few to help you understand the level of Institutions coming to Solana. Other Noteworthy Integrations/Partnerships are:
+
+Centrifuge partnered with Wormhole in mid-2025 to launch a multichain tokenisation platform, with Solana as the first supported non-EVM chain. This lets assets tokenised via Centrifuge’s system move between Solana and other networks easily.
+
+Frax Finance introduced frxUSD, a stablecoin backed by BlackRock’s BUIDL fund and tokenised via Securitize, effectively turning a money market fund into a redeemable stablecoin.
+
+Stripe and Shopify’s integration of Solana Pay means businesses can easily accept stablecoins on Solana, indirectly boosting RWA usage( Stablecoins are not exactly counted in RWAs, but yeah, this is massive too).
+
+So much is happening in space over the last 18 months, it's hard to keep track. We tried to find a few major ones, but surely there are a lot more that will be contributing millions more in liquidity to Solana.
+
+Regulatory Landscape
+
+Regulations play a major role in the growth of technology in a particular country. With the rise of Solana in the RWA space, it is important to keep track of regulations along with technical/institutional developments. Let’s discuss
+
+United States: The US has been cautious but supportive of a few RWA initiatives, like tokenized money market funds by Franklin Templeton or BlackRock. The SEC’s approval of such funds signalled that tokenisation of traditional securities can be done within existing frameworks. The U.S. is a bit fragmented: open to tokenization through existing fund/securities channels, but lacking a unified regulatory regime for on-chain markets.
+
+Europe and UK: The EU passed MiCA(in 2023), which gives issuers regulatory clarity on how to launch asset-backed tokens across EU member states. Basically, MiCA regulation standardises rules for crypto assets and tokenised securities throughout the EU. The EU also launched various programs and initiatives, like the DLT pilot regime, to support the tokenisation of securities in various ways.
+
+Hong Kong: With strong regulatory backing through the LEAP framework and Stablecoin Ordinance, the HK is positioning itself as a leading centre for real-world asset tokenisation. Licensed players are already offering tokenised assets like gold and real estate.
+
+Singapore: Through Project Guardian, the Monetary Authority of Singapore(MAS) has established clear guidelines for tokenising assets like bonds, funds, and real estate, with major institutions like HSBC and JPMorgan already participating.
+
+India: In March 2025, IFSCA(GIFT city regulators) published a consultation paper outlining a framework for tokenised assets. The proposal defines specific categories like tokenised T-bills and sovereign bonds, with a focus on custody, KYC, and safeguarding of investors. Learn more about it here.
+
+UAE: UAE continues to become a hub for Crypto and crypto-related activities like RWAs. Various crypto companies in Dubai are working closely with the government body to develop good infrastructure for blockchain-related technologies. VARA also launched a dedicated DeFi sandbox, attracting over 1,500 blockchain companies to the region.
+
+To summarise, various government bodies are still cautious and acting cautiously with blockchain and related stuff, while some want to capture the first wave and play on the front foot, trying to capture as much value as possible, as they have recognised the massive potential blockchain has.
+
+Future of RWAs
+
+The current state of RWAs on Solana is impressive, but it’s likely just the tip of the iceberg. If we extrapolate from trends, Solana’s role in the tokenisation revolution could expand dramatically in the coming years. Here are some opportunities and use cases that could define the next phase:
+
+Deepening Liquidity and DeFi Integration:
+
+So far, most RWA tokens on Solana like BUIDL or BENJI has been passive buy and hold assets with limited on chain activity. But that’s already starting to change. Platforms like Centrifuge and Maple is trying out liquidity pools and DeFi linked loan products. The next big unlock are secondary markets using permissioned AMMs and order book DEXs like Phoenix to enable real time trading of tokenised bonds, credit and real estate, while still staying compliant.
+
+The bigger vision is Grand Unified Market, like Jupiter calls it, where crypto, stocks, bonds and commodities all trade smoothly on Solana. If it works out, Solana can become a 24/7 global exchange for almost every asset class, helping with price discovery in both on chain and off chain markets.
+
+Expanded Asset Tokenisation:
+
+The assets tokenized so far like fiat, bonds, funds, loans and real estate are just the starting point. Next could be trade finance and supply chain assets, like tokenised invoices or warehouse receipts. These short term instruments might be pooled on Solana, allowing global investors to help fund working capital for businesses. Intellectual property also looks promising as artists can tokenise royalties and send income directly in wallets, with Solana’s low fees making real time payments possible.
+
+We may also see tokenised carbon credits, consumer loans like auto or student debts, and even government bonds issued directly onchain. If sovereign bonds or CBDCs start working with Solana, it can really help make the network a key part of future financial system.
+
+Integration with Traditional Finance Systems:
+
+Solana’s in a really good spot to become the bridge between traditional finance and crypto. Imagine it being the system that helps settle trades between a stock exchange and a bank, but way faster and more open. In the future, big exchanges could even run parts of their system on Solana just to get better speed, transparency, and easier connections with other platforms.
+
+What’s even more exciting is the idea of swapping totally different assets in one go. Like trading a tokenised S&P 500 fund for a piece of real estate or some gold, all in one smooth transaction. That’s the kind of thing you just can’t do easily in the traditional system. It’ll take solid oracles and smart cross-margin systems, but if it works, Solana could power a new kind of global market where everything connects and trades instantly.
+
+Closing Thoughts
+
+Tokenisation of RWAs is a new normal, but are we ready with infra and support for the tokenisation of everything, as well as support from regulatory bodies? Well, it's still a long way to go; we are not there yet. Tokenisation of real-world assets is shaping up to be one of the most exciting shifts in blockchain, and Solana is already giving tough competition with tech, ecosystem, as well as big names on the partnership board.
+
+Tokenising RWAs opens up a world of possibilities whether it's allowing people to invest in real estate or equities with ease, offering fractional ownership, or giving us 24/7 access to markets. The transparency and liquidity it brings are huge benefits. And Institutions are here, so we are on a good path to development.
+
+There’s still a lot to work through, especially when it comes to regulations, but the momentum is undeniable. As more projects build on Solana and institutions hop on board, we’re only scratching the surface of what’s possible. The world of RWAs is just getting started, and it's going to be exciting to see where it takes us.
+
+References
+
+https://yashhsm.medium.com/state-of-real-world-assets-on-solana-the-opportunities-23ebff9a50c9
+
+https://app.rwa.xyz/
+
+https://www.rwa.xyz/blog/tokenized-asset-coalition-state-of-tokenization-2024
+
+https://www.helius.dev/blog/solana-real-world-assets
+
+https://solanacompass.com/projects/category/real-world-assets
+
+https://superstate.com/blog/introducing-opening-bell
+
+https://solanacompass.com/projects/category/real-world-assets
+
+https://solanafloor.com/news/solana-foundation-jupiter-aix-and-intebix-sign-mo-u-for-dual-ipo-listings
+
+https://www.coindesk.com/policy/2025/04/22/ecb-european-commission-clash-on-mica-changes-over-us-crypto-policies-report
+
+This Article was written collectively by Grahil and Vinay. If you are a builder and you believe we can help you in any way, feel free to drop a DM. Until Next time!!
+
+Subscribe to Grahil’s Substack
+By Grahil Khandelwal · Launched 14 days ago
+My personal Substack
+Subscribe
+By subscribing, I agree to Substack's Terms of Use, and acknowledge its Information Collection Notice and Privacy Policy.
+Share
+	
+A guest post by
+Vinay Sharma
+Builder
+	
+Subscribe to Vinay

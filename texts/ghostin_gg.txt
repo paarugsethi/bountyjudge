@@ -1,0 +1,327 @@
+Open in app
+
+Sign up
+
+Sign in
+
+Write RWAs served Raw: What’s Happening on Solana
+1. What Are Real-World Assets (RWAs)?
+Rahul Yadav
+Follow
+13 min read
+·
+Jul 4, 2025
+
+50
+
+At the start of crypto era, the focus was mostly on digital assets like Bitcoin, Ethereum, and the thousands of tokens that followed. But a quiet transformation has been unfolding behind the scenes: the tokenization of real-world assets (RWAs).
+
+RWAs refer to physical or traditional financial assets, something like government bonds, real estate, invoices, stocks, or commodities, that are brought onto the blockchain via Digital Tokens. This process allows them to be traded, lent, or collateralized just like any crypto token, but with real-world backing.
+
+Why is this important? Because tokenizing RWAs brings global liquidity, 24/7 markets, and programmable finance to things that were once stuck in closed, siloed systems. It’s a way to make the real economy more accessible, transparent, and efficient. And the growth has been nothing short of explosive.
+
+RWA tokenization grew from $5 billion in 2022 to over $24 billion by June 2025, a 380% surge.
+Tokenized Treasury Bills alone expanded from $100 million in Jan 2023 to around $7.5 billion by June 2025.
+Even legacy giants like BlackRock and Franklin Templeton have stepped into the arena with their tokenized money market funds (BUIDL and FOBXX respectively).
+
+What once felt like a “maybe someday” concept has turned into a rapidly growing pillar of modern finance and Solana is quickly becoming its most active playground.
+
+A whole Image of Digital Assets Thriving
+The RWA Market Stats on 21st June, 2025
+2. Solana is Leading the RWAs, How and Why?
+
+RWAs are not just Ethereum-based projects like Centrifuge or traditional finance giants experimenting with private blockchains, they a much bigger picture. The Speed, Low-Cost Transactions, Integrations, etc. features have made Solana a better place for RWAs to grow. Solana has quietly and quickly taken the lead as one of the most active ecosystems for tokenized real-world assets.
+
+Reasons why Solana is the go-to choice for RWAs:
+
+2(a). Lightning-Fast, Low-Cost Transactions
+
+RWAs need a reliable network where assets can move frequently and at minimal cost. Solana offers ultra-low transaction fees (fractions of a cent) and sub-second finality, making it a perfect fit for use cases like:
+
+Tokenized Treasury bill trading
+Interest-bearing stablecoins
+Cross-border asset transfers
+Frequent settlements across financial contracts
+
+Solana processes up to 65,000 transactions per second (TPS) and supports real-time, low-latency movement of capital, core key requirements for modern financial products.
+
+2(b). High Transaction Volume per User
+
+The point that makes Solana the best is not who’s building, it’s the users. Solana currently leads all chains in average RWA transaction volume per user, about $40M per user, according to rwa.xyz. This isn’t just a fun fact, it reflects serious, real-world usage. While other chains may boast more users, Solana users transact more, with low fees and high throughput encouraging frequent, high-value activity. This makes it ideal for institutions and DeFi-native protocols alike.
+
+Platforms like Ondo and Maple benefit from this efficiency, processing large volumes of tokenized treasuries and credit. And as Solana continues integrating with payment giants like Stripe and Visa, this number is likely to grow.
+
+A quick line: Solana isn’t just scaling users, it’s scaling impact per user.
+
+2(c). Integration with Institutions and Infrastructure
+(I). R3’s Corda x Solana Integration
+
+Corda, the private blockchain used by major financial institutions like HSBC, Euroclear, and SDX, is now working with Solana.
+This means tokenized assets that were once locked on permissioned chains can now move to a public chain like Solana. It opens the door to more liquidity, flexibility, and real-world use cases.
+
+(II). Tokenized MMFs(Money Market Funds) & Compliance Rails
+
+BlackRock’s BUIDL (over $2.9B AUM) and Franklin Templeton’s FOBXX are examples of big asset managers tokenizing real-world funds on Solana.
+Not only are these funds operating onchain, but they’re doing so with full regulatory compliance, making it easier for institutions to trust and build on the network.
+
+(III). Payment Layer Partnerships
+
+Entities like Circle (USDC issuer) and infrastructure players such as Wormhole are also making it seamless to move tokenized value across chains and financial systems, enabling more RWA integrations. This backend plumbing is what enables tokenized dollars, stocks, and more to flow freely, a key unlock for RWAs to scale.
+
+3. Key Platforms For RWAs on Solana:
+
+As RWAs gain momentum, a robust ecosystem of platforms is forming on Solana to support their issuance, management, and trading. These platforms are not just proof-of-concept projects, they’re actively bridging institutional capital with decentralized finance. From tokenizing treasuries to enabling undercollateralized lending, they are shaping the next generation of financial infrastructure. Let’s discuss some:
+
+3(a). Institutional Level Protocols
+
+I. ONDO Finance
+
+Ondo is one of the most prominent players in the RWA space on Solana. It allows users to access yield from tokenized U.S. Treasuries via its USDY (Ondo U.S. Dollar Yield) product. Ondo bridges the gap between TradFi and DeFi by offering compliant, transparent, and low-risk exposure to real-world assets.
+
+In May 2024, Ondo’s OUSG crossed $150M in deposits. https://docs.ondo.finance/qualified-access-products/ousg/overview
+It supports permissioned access for institutions and retail alike through clear KYC rails.
+The protocol uses real-time attestations to prove asset backing, enhancing trust.
+
+II. Maple Finance
+
+Maple is a decentralized credit marketplace that has shifted from Ethereum to Solana to leverage lower costs and faster settlement for institutional lending. In Q1 2025, Maple Solana had over $40M in active loans.
+
+Maple Solana launched with a focus on undercollateralized loans for Web3-native institutions.
+It facilitates pools where KYC’d borrowers can access credit and lenders earn yield.
+With strong governance and risk controls, Maple is expanding the debt capital market on-chain.
+
+III. VNX
+
+VNX offers tokenized investment products like gold, venture capital, and government bonds. Though lesser-known than Ondo and Maple, VNX plays a unique role in the European tokenization market, especially as MiCA regulations take shape.
+
+VNX Gold is fully backed by physical gold stored in Liechtenstein.
+Their move to Solana aims to tap into efficient issuance and liquidity for tokenized commodities.
+3(b). Fund Tokenization Leaders
+
+I. BlackRock’s BUIDL Fund (Circle + Securitize)
+
+BlackRock, the world’s largest asset manager has made headlines by launching its $2.9B tokenized MMF on Ethereum in March 2024 (https://securitize.io/learn/press/blackrock-launches-first-tokenized-fund-buidl-on-the-ethereum-network).
+
+But its presence is now felt on Solana as well, where Circle and Securitize are extending BUIDL’s reach for composability and DeFi access.
+
+BUIDL is backed by U.S. Treasuries and repo agreements, offering ~5% APY.
+Token holders can redeem 1:1 via Securitize or interact with apps on Solana.
+Its integration shows how compliant finance can meet open finance.
+
+II. Franklin Templeton’s FOBXX
+
+Franklin Templeton has been a first-mover among traditional fund managers in blockchain-based MMFs. Its FOBXX fund, one of the earliest tokenized treasury products, was launched on Stellar and later extended to Solana. (https://www.coindesk.com/business/2025/02/12/franklin-templeton-expands-usd594m-market-money-fund-to-solana)
+
+It tracks a government money market fund and maintains real-time transparency.
+All fund operations, from NAV updates to compliance are posted on-chain.
+In doing so, Franklin has become a case study in long-term institutional adoption.
+
+→ WHY ALL THESE MATTERS??
+
+These tokenized funds serve as on-chain cash equivalents, offering stability, yield, and liquidity, all with institutional-grade compliance. They’ve already proven that RWAs can exist safely on public chains like Solana without compromising on regulations or investor trust.
+
+These integrations also help DeFi builders who can now use BUIDL or FOBXX as composable, yield-bearing base assets for lending markets, vaults, or even real-world payroll rails.
+
+3(c). Infrastructure Integrators
+
+As real-world assets (RWAs) move onchain, it’s not just about putting them on a blockchain, it’s about building the pipes that connect the old world of finance to the new one. That’s where Solana’s integrations with infrastructure providers come in, quietly doing the heavy lifting to make institutional adoption possible. A major development was the integration of Corda, a private blockchain used by big players like HSBC, Euroclear, and SDX, with Solana. Corda has already processed over $10 billion in tokenized assets for traditional financial institutions. Now, thanks to a new interoperability layer, those assets can move from closed enterprise systems onto Solana’s public network. That means institutions can tap into DeFi liquidity and use RWAs in new ways, without sacrificing their existing infrastructure.
+
+Meanwhile, institutions aren’t just experimenting, they’re deploying. BlackRock’s BUIDL fund and Franklin Templeton’s FOBXX are two fully tokenized money market funds operating on Solana. What’s special about these is that they’re not just digital wrappers. They follow full compliance standards, opening the door for TradFi to participate confidently in Web3. These products blend traditional financial safeguards with blockchain accessibility, making them a model for future tokenization. Powering these shifts are key players like Circle (issuer of USDC) and Wormhole, cross-chain bridges and payment layers that make it easy to move tokenized assets securely across different ecosystems. This is critical because it ensures that tokenized value isn’t siloed to one chain, it becomes truly portable.
+
+Together, these infrastructure pieces are what make RWAs usable, scalable, and trustworthy on Solana. They’re turning lofty ideas into financial realities.
+
+R3’s Corda integration with Solana
+4. How RWA Tokenization Works ?
+
+Let’s break down the core architecture and mechanisms behind putting real-world assets on the blockchain, made simple and beginner-friendly.
+
+4(a). How Tokens Are Created and Structured
+
+Tokenizing an asset essentially means representing real-world value (like a T-bill or a loan) as a digital token on a blockchain like Solana. But not all RWA tokens are created equal.
+
+There are typically two models:
+
+1. Yield-Bearing Tokens:
+These represent a claim to an underlying asset (e.g., U.S. Treasury bills) and often generate yield. Protocols like Ondo Finance issue such tokens backed 1:1 by real assets, allowing users to earn interest just by holding them.
+
+2. Tranches & Token Classes:
+Some RWA protocols offer risk-adjusted token structures, say, “Senior” and “Junior” tranches. Senior tokens offer lower risk and steady returns, while Junior tranches take on more risk in return for potentially higher rewards. This structure mirrors traditional finance and helps attract a diverse investor base.
+
+Token Design Determines Access and Use:
+
+Some tokens are redeemable only after a lock period.
+Some can be traded freely like any other DeFi token.
+Some are gated to accredited investors only due to regulations.
+4(b). Custodians and Oracles: The Trust Layer
+
+Since we’re dealing with real-world stuff (like government bonds), someone needs to hold and verify the asset backing your token.
+
+That’s where custodians and oracles come in:
+
+Custodians like banks or regulated financial institutions hold the real-world asset in a secure account.
+Oracles report real-time data, like the value of the bond or interest payout, back to the blockchain. Projects like Chainlink or RedStone ensure this flow of data is verifiable and secure.
+
+This dual-layer builds legal and technical trust. You know the token actually represents a real asset and that the data feeding DeFi protocols is accurate.
+
+4(c). Managing Risk and Ensuring Transparency
+
+The beauty of tokenized assets lies in their traceability and openness. Most leading RWA protocols offer:
+
+Proof of Reserves: Audited documentation showing what backs the tokens.
+Redemption Mechanisms: Clear steps on how and when tokens can be redeemed for the underlying asset.
+Default Risk Assessment: Ratings or flags that highlight risk levels, borrower data (for credit RWAs), or asset volatility.
+
+In fact, many RWA tokens on Solana include real-time dashboards showing inflows, yield rates, collateral ratios, etc.
+
+5. Global Regulation & Policy Landscape:
+
+As Real-World Assets grow on-chain, regulation isn’t just a background noise, it’s the stage. Whether it’s onboarding billions of institutional capital or giving retail users confidence in tokenized products, clear regulatory frameworks are essential for RWAs to thrive. Let’s explore how different regions are handling this.
+
+5(a). United States & Europe
+In the US, the landscape is still fragmented. Agencies like the SEC and CFTC remain cautious and haven’t issued definitive rules for RWAs. But key projects (like Franklin Templeton’s FOBXX) have managed to operate under existing fund regulations. Stablecoin laws and digital asset frameworks (such as the Financial Innovation and Technology Act) are slowly building clarity.
+Europe, on the other hand, has been more proactive with the MiCA (Markets in Crypto Assets) regulation. MiCA lays out a clear framework for asset-referenced tokens and stablecoins, offering compliance rails that are attracting projects like Societe Generale’s tokenized bonds and euro stablecoins.
+TO READ : https://www.coindesk.com/policy/2025/04/22/ecb-european-commission-clash-on-mica-changes-over-us-crypto-policies-report
+5(b). ASIA & INDIA
+Singapore and Hong Kong are rolling out sandboxes and digital asset licenses, encouraging both crypto-native and traditional finance institutions to launch tokenized securities and RWAs.
+India’s IFSCA (GIFT City regulator) recently released a consultation paper on tokenized assets in March 2025. It proposes clear categories for “tokenized financial instruments,” including T-bills and sovereign bonds, while ensuring custody, KYC, and investor protection compliance. (https://ifsca.gov.in/Document/ReportandPublication/ifsca-consultation-paper-on-regulatory-approach-towards-tokenization-of-real-world-assets03032025111644.pdf )
+5(c). Regulatory Trends
+Proof-of-Reserve & Attestations: Projects are building real-time dashboards showing underlying asset value, issuer identity, and redemption mechanisms.
+Compliant Onramps: Integrations with regulated stablecoins (like USDC, PYUSD), and compliance-focused custody providers are now standard.
+Audit & Reporting Automation: Using on-chain data + AI tooling, projects now automate regulatory reports and investor disclosures.
+6. Future of RWAs on Solana:
+
+Let’s talk about new trends, models, and experiments that are likely to define the “next wave” of tokenized assets on Solana.
+
+6(a). Bridging TradFi & DeFi
+
+One of the most exciting developments is,
+
+Jupiter’s memorandum with the Kazakhstan Stock Exchange (KASE) (https://x.com/JupiterExchange/status/1928122222960328748).
+
+This agreement aims to create dual listings, where companies can go public both via:
+
+Traditional IPO on KASE
+Tokenized share listing on Solana
+
+Why this matters:
+
+It blurs the line between onchain and traditional finance
+Opens up global investor access to previously siloed markets
+Bridges real-world capital markets with crypto-native liquidity
+
+This could mark the start of a world where “IPO” and “TGE” (Token Generation Event) happen simultaneously, aligning institutional standards with DeFi infrastructure.
+
+6(b). Real-World-Backed Stablecoins
+
+As stablecoins evolve beyond simple dollar pegs, a new generation of real-world-backed stablecoins is emerging, ones backed by tokenized T-Bills, bonds, and other off-chain assets.
+
+Instead of relying on traditional reserves held by centralized issuers, these stablecoins are built on-chain from day one, often backed by assets already tokenized and verifiable. For example, Ondo Finance’s USDY is a token backed by yield-generating US government securities. This evolution not only enhances transparency but also creates a native yield layer. Users holding these stablecoins aren’t just preserving value; they’re earning from real-world interest streams.
+
+These yield-bearing stables are seeing traction especially in emerging markets and among protocols looking for safer base assets. It’s not far-fetched to imagine a future where your stablecoin wallet is diversified, not just into USDC or USDT, but into several yield-backed, real-world-anchored digital dollars.
+
+ONDO Finance — USDY returns
+6(c). Bringing RWAs to Retail Zone via Apps
+
+As Real-World Assets (RWAs) evolve beyond institutional finance, a new wave of user-friendly platforms is bringing them straight into people’s pockets.
+
+Jupiter Studios stands out as a key player, it offers tools to help teams launch, distribute, and manage onchain assets with a high degree of control and transparency. Builders can now easily package RWAs into tradable formats and deliver them to users through a smooth interface. It’s like launching an ETF or T-bill app, but entirely onchain.
+
+Squads enables secure mobile treasury access and programmatic ownership over RWA tokens.
+Securitize continues to offer retail-accessible U.S. Treasury-backed tokens and tokenized equity.
+Jupiter Mobile complements the ecosystem by offering a unified app experience for swaps, stablecoins, and potentially RWAs soon.
+
+These apps abstract away compliance, custody, and liquidity management, giving users access to yield-bearing assets and global finance in a few taps.
+
+Think of this moment as “Robinhood meets DeFi”, powered by Solana’s fast, low-cost, and composable infrastructure.
+
+7. Conclusion: The RWA Moment Is Real
+
+The rise of Real-World Assets on Solana is no longer just a trend, it’s a structural shift in how capital markets are evolving. Between 2022 and mid-2025, tokenized RWAs grew from $5B to over $24B, with treasury bill markets alone ballooning from $100M to $7.5B. Solana’s technical edge, high throughput, low fees, rapid finality, made it the most efficient chain by transaction volume per holder (~$40M+).
+
+Institutional validation is evident: BlackRock’s $2.9B BUIDL fund, Franklin Templeton’s FOBXX, and integrations with R3’s Corda underline serious intent. Platforms like Ondo, Maple, and VNX are streamlining everything from debt issuance to yield-bearing fund access. The regulatory environment is also catching up. Frameworks like Europe’s MiCA and India’s IFSCA paper are shaping compliant pathways for global adoption.
+
+The RWA landscape is far from static. Innovations like dual listings, RWA-powered stablecoins, and consumer-facing apps point to what’s next: liquid, programmable, and inclusive financial infrastructure. And in all of this, Solana has emerged as a core foundation, and not just for crypto-native users, but for the future of finance itself.
+
+REFERENCES:
+Real-World Assets in Onchain Finance Report
+The Ultimate H1 2025 Market Overview. With Blockchain Oracles Section. Table of Contents 1. Key Takeaways Featured…
+
+blog.redstone.finance
+
+Overview of Real World Assets on Solana
+‍ Real World Assets (RWAs) represent an exciting frontier in blockchain technology, where off-chain financial assets…
+
+www.reflexivityresearch.com
+
+R3's Corda integration with Solana offers elegant interoperability - Ledger Insights - blockchain…
+Last month enterprise blockchain firm R3 announced an alliance with Solana involving a technical integration between…
+
+www.ledgerinsights.com
+
+Global Equity Pulse
+Health care stocks are facing elevated policy uncertainties and market pessimism. Templeton Global Equity Group favors…
+
+www.franklintempleton.com
+
+https://docs.ondo.finance/
+
+Real-World Assets (RWAs) Explained | Chainlink
+Understand the opportunity of real-world assets (RWAs) for converting traditional and financial assets into a superior…
+
+chain.link Rahul Yadav
+
+The Year 2025: A Deep Dive into State of Stablecoins on Solana
+A cloudy evening in 2040, after their first lecture on crypto, my kids came home full of questions. “What were stablecoins like back in…
+Jun 29
+45 Rahul Yadav
+
+Solana’s Dev Tools Are Powering the Next Wave of Web3
+1. The Rise of Builders on Solana:
+5d ago
+43 JF
+
+Silicon Shock: Navigating Job Cuts and Economic Crossroads in 2025
+In a world increasingly driven by innovation, the name “Silicon Valley” has long been synonymous with opportunity, growth, and progress…
+Jun 14
+18 Bhagya Rana
+
+Why Rust Is Becoming the Go-To Language for High-Performance Blockchain Apps
+From Solana to Polkadot, Rust’s blend of speed, safety, and modern design is redefining the future of blockchain development.
+3d ago
+100 CoinPedia Markets
+
+Top 7 Altcoins to Buy Under $1 in July 2025
+The cryptocurrency market is showing bullish signals today. Bitcoin surpassed the $118,000 mark (+5.71%), a new all-time high on July 11…
+5d ago
+95
+4 In
+
+InsiderFinance Wire
+
+by
+
+Kabilan Thavabalalingam
+
+How I Print Money Daily with This Simple Options Strategy
+A step-by-step guide to making $25-$50 daily
+Jul 9
+201
+15 Pump Parade
+
+We Gave a Solana AI Agent $200 to Trade Memecoins — Here’s What Happened
+Can AI crypto agents actually outperform humans? We ran an experiment to check it out
+Jun 26
+822
+22 In
+
+Predict
+
+by
+
+iswarya writes
+
+GPT-5 Is Coming in July 2025 — And Everything Will Change
+“It’s wild watching people use ChatGPT… knowing what’s coming.”  — OpenAI insider
+Jul 8
+5.3K
+129
