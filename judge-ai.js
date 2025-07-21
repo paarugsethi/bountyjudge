@@ -2,6 +2,7 @@ const fs = require('fs');
 const csv = require('csv-parser');
 require('dotenv').config();
 const OpenAI = require('openai');
+const pdf = require('pdf-parse');
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
@@ -28,85 +29,348 @@ const allResultsPath = 'all_results.json';
 
 async function judgeWithAI(rows) {
   const results = [];
+  const aiDetectionResults = [];
 
+  // First pass: AI detection
+  console.log('\n🤖 Phase 1: AI Detection Analysis');
   for (const row of rows) {
     try {
-      const text = fs.readFileSync(`texts/${sanitizeFilename(row.Name)}.txt`, 'utf-8');
+      const pdfPath = `pdfs/${sanitizeFilename(row.Name)}.pdf`;
+      const pdfBuffer = fs.readFileSync(pdfPath);
+      const pdfData = await pdf(pdfBuffer);
+      const text = pdfData.text;
+      const aiDetectionResponse = await detectAIContent(text);
+      
+      // Clean the response
+      let cleanedResponse = aiDetectionResponse.trim();
+      if (cleanedResponse.startsWith('```json')) {
+        cleanedResponse = cleanedResponse.replace(/^```json\s*/, '').replace(/\s*```$/, '');
+      }
+      if (cleanedResponse.startsWith('```')) {
+        cleanedResponse = cleanedResponse.replace(/^```\s*/, '').replace(/\s*```$/, '');
+      }
+      
+      let parsedResponse;
+      try {
+        parsedResponse = JSON.parse(cleanedResponse);
+      } catch (e) {
+        console.log(`AI Detection JSON parse error for ${row.Name}:`, cleanedResponse.substring(0, 200));
+        // Default to human-written if detection fails
+        parsedResponse = { aiPercentage: 20, reasoning: ['AI detection failed, defaulting to human-written'] };
+      }
+      
+      const { aiPercentage, reasoning } = parsedResponse;
+      
+      aiDetectionResults.push({
+        ...row,
+        aiPercentage,
+        aiReasoning: reasoning
+      });
+
+      const status = aiPercentage >= 71 ? '❌ REJECTED (AI)' : '✅ HUMAN';
+      console.log(`${status} ${row.Name}: ${aiPercentage}% AI-generated`);
+      
+    } catch (err) {
+      console.error(`❌ AI Detection failed for ${row.Name}: ${err.message}`);
+      // Default to human-written if detection fails
+      aiDetectionResults.push({
+        ...row,
+        aiPercentage: 20,
+        aiReasoning: ['AI detection failed, defaulting to human-written']
+      });
+    }
+  }
+
+  // Filter out AI-generated content (>=71%)
+  const humanWrittenSubmissions = aiDetectionResults.filter(row => row.aiPercentage < 71);
+  const rejectedSubmissions = aiDetectionResults.filter(row => row.aiPercentage >= 71);
+  
+  console.log(`\n📊 AI Detection Results:`);
+  console.log(`   Human-written: ${humanWrittenSubmissions.length}`);
+  console.log(`   AI-generated (rejected): ${rejectedSubmissions.length}`);
+  
+  if (rejectedSubmissions.length > 0) {
+    console.log(`\n❌ Rejected for AI content (≥71%):`);
+    rejectedSubmissions.forEach(row => {
+      console.log(`   ${row.Name}: ${row.aiPercentage}%`);
+    });
+  }
+
+  // Second pass: Quality scoring for human-written submissions only
+  console.log('\n📝 Phase 2: Quality Evaluation (Human-written only)');
+  for (const row of humanWrittenSubmissions) {
+    try {
+      const pdfPath = `pdfs/${sanitizeFilename(row.Name)}.pdf`;
+      const pdfBuffer = fs.readFileSync(pdfPath);
+      const pdfData = await pdf(pdfBuffer);
+      const text = pdfData.text;
       const aiResponse = await evaluateSubmission(text);
-      const { score, reasoning } = JSON.parse(aiResponse);
+      
+      // Clean the response - remove markdown code blocks if present
+      let cleanedResponse = aiResponse.trim();
+      if (cleanedResponse.startsWith('```json')) {
+        cleanedResponse = cleanedResponse.replace(/^```json\s*/, '').replace(/\s*```$/, '');
+      }
+      if (cleanedResponse.startsWith('```')) {
+        cleanedResponse = cleanedResponse.replace(/^```\s*/, '').replace(/\s*```$/, '');
+      }
+      
+      let parsedResponse;
+      try {
+        parsedResponse = JSON.parse(cleanedResponse);
+      } catch (e) {
+        console.log(`JSON parse error for ${row.Name}:`, cleanedResponse.substring(0, 200));
+        throw new Error(`Invalid JSON response: ${e.message}`);
+      }
+      
+      const { score, reasoning } = parsedResponse;
 
       results.push({
         Name: row.Name,
         Link: row['Submission Link'],
         WordCount: row['Word Count'],
         Score: score,
-        Reasoning: reasoning
+        Reasoning: reasoning,
+        AIPercentage: row.aiPercentage,
+        AIReasoning: row.aiReasoning
       });
 
-      console.log(`✅ Scored ${row.Name}: ${score}/18`);
+      console.log(`✅ Scored ${row.Name}: ${score}/18 (${row.aiPercentage}% AI)`);
     } catch (err) {
       console.error(`❌ ${row.Name}: ${err.message}`);
     }
   }
 
-  fs.writeFileSync(allResultsPath, JSON.stringify(results, null, 2));
-  runComparativeJudgment(results);
+  // Save all results including AI detection data
+  const allResultsWithAI = {
+    humanWritten: results,
+    rejectedForAI: rejectedSubmissions.map(row => ({
+      Name: row.Name,
+      Link: row['Submission Link'],
+      WordCount: row['Word Count'],
+      AIPercentage: row.aiPercentage,
+      AIReasoning: row.aiReasoning,
+      Status: 'Rejected - AI Generated'
+    }))
+  };
+  
+  fs.writeFileSync(allResultsPath, JSON.stringify(allResultsWithAI, null, 2));
+  
+  if (results.length > 0) {
+    runComparativeJudgment(results);
+  } else {
+    console.log('\n❌ No human-written submissions found for comparative judgment!');
+  }
 }
 
-async function evaluateSubmission(text) {
-  const topic = "the State of RWAs on Solana";
+async function detectAIContent(text) {
+  const prompt = `
+You are an expert at detecting AI-generated content. Analyze this text and determine what percentage was likely written by AI vs human.
+
+Look for these AI indicators:
+- Overly formal, academic tone lacking personality
+- Generic phrases like "In conclusion", "It is important to note", "Furthermore", "Moreover"
+- Perfect grammar with no natural human errors or contractions
+- Repetitive sentence structures
+- Buzzword-heavy language without substance
+- Lists that feel artificially comprehensive
+- Lack of personal anecdotes, opinions, or unique voice
+- Generic transitions between topics
+- Overly balanced viewpoints without taking sides
+- Technical explanations that feel copy-pasted
+- Uniform paragraph lengths and structures
+
+Human indicators:
+- Natural conversational tone with personality
+- Unique insights, personal experiences, or hot takes
+- Occasional grammar imperfections or informal language
+- Varied sentence lengths and structures
+- Strong opinions or biases
+- References to specific personal experiences
+- Natural flow of thought with tangents
+- Inconsistent writing style (more human)
+- Colloquialisms, slang, or regional expressions
+
+Return your analysis as JSON:
+{
+  "aiPercentage": percentage_0_to_100,
+  "reasoning": [
+    "specific evidence for AI generation",
+    "specific evidence for human writing",
+    "overall assessment basis"
+  ]
+}
+
+Text to analyze:
+"""${text.length > 8000 ? text.slice(0, 4000) + "\n...\n" + text.slice(-2000) : text}"""`;
+
+  const response = await openai.chat.completions.create({
+    model: 'gpt-4o',
+    messages: [{ role: 'user', content: prompt }],
+    temperature: 0.1,
+    max_tokens: 500
+  });
+
+  if (!response || !response.choices || !response.choices.length) {
+    throw new Error("Invalid or empty response from OpenAI for AI detection");
+  }
+
+  return response.choices[0].message.content;
+}
+
+async function evaluateSubmission(text, bountyDescription = null) {
+  const topic = "the State of stablecoins on Solana";
+
+  // Default RWA bounty description if none provided
+  const defaultBountyDescription = `
+About the Bounty
+Stablecoins are a key primitive for driving both crypto-native & mainstream adoption. A quick overview of where things stand:
+
+stablecoin supply on Solana recently crossed $10B
+
+there were $200M monthly transactions doing over $40B in volume
+
+companies like Stripe, Shopify, Visa, Mastercard, etc have integrated stablecoins into their products.
+
+new startups like Squads, KAST, Perena, etc are innovating at the frontier of stablecoin based products
+
+the recently passed GENIUS act provides a first ever framework for dollar denominated stablecoins
+
+while USDC & USDT dominate, lots of new players like PYSUD, USDG, etc are issuing their own stablecoins.
+
+Your mission, should you choose to accept it, is to write a comprehensive deep dive about the state of stablecoins on Solana. The ideal submission will:
+
+Present an overview of key network level metrics and comment on trends
+
+Highlight, and explain past the headline, all key product developements, integrations and features related to stablecoins
+
+Draw out an ecosystem map highlighting distinct sectors within the stabelcoin domain and the key players in it
+
+Compare and contrast regulatory approaches across the world and draw common trends and predictions for the future
+
+Suggest & develop interesting opportunities or product ideas for the application of stablecoins.
+
+Sound opinioniated and interesting vs just being an information dump
+
+Other Evaluation Criteria
+In addition to the criteria shared above, our judges will use the following criteria will judging your submissions
+
+Did you write a compelling introduction and a satisfying conclusion?
+
+Is your writing easy and fun to read?
+
+Did you avoid overly complex jargon?
+
+Did you explain concepts in a way a person new to crypto could understand?
+
+`;
+
+  const currentBountyDescription = bountyDescription || defaultBountyDescription;
 
   const prompt = `
-You are a very strict and thoughtful judge for a bounty competition evaluating deep-dive essays on the topic of: **${topic}**.
+You are an EXTREMELY strict and elite judge for a bounty competition evaluating deep-dive essays on: **${topic}**.
 
-You must give each submission a score from 0 to 18. Use this weighted rubric:
+${currentBountyDescription}
 
-1. Core Concepts — Are key concepts explained clearly and correctly?
-2. Ecosystem Coverage (most important) — Are major tools, products, or participants discussed with depth and insight?
-3. Landscape Mapping — Does the submission organize the space meaningfully (e.g. segments, roles, verticals)?
-4. External Context — Are regulatory, economic, or technological forces covered?
-5. Original Insight (most important) — Does the piece offer surprising observations, predictions, frameworks, or critiques?
-6. Opinionated Voice — Does the author have a confident, distinct point of view?
-7. Clarity & Readability — Is it accessible, well-structured, and engaging?
+🔥 CRITICAL: You are looking for the TOP 1% of submissions that meet these specific bounty criteria. Most will disappoint you.
 
-Submissions must **stand out**. 
-- Penalize articles that summarize obvious ideas, list features without depth, or offer no fresh framing.
-- A well-written but generic article should **not** score above 10/18.
+VISUAL ANALYSIS: This text was extracted from a PDF. Look for evidence of:
+- References to charts, graphs, or visual elements
+- Table-like data or structured formatting  
+- Mentions of "see chart above" or "as shown in figure"
+- Lists or data suggesting visual presentation
+- Formatting clues indicating sophisticated visual organization
 
-⚠️ Scoring Instructions:
+⚡ WEIGHTED SCORING RUBRIC (0-18 points):
 
-Scoring bands:
-- 5–8: Generic, safe, lacks depth or insight
-- 9–12: Good, covers basics, some perspective
-- 13–15: Strong framing or insight, but not groundbreaking
-- 16–18: Exceptional — rare originality, insight, or synthesis
-- If unsure between two scores, choose the lower.
+**BOUNTY DELIVERABLES COVERAGE (8 points) - MOST IMPORTANT**
+- 0-2: Missing most required deliverables, superficial treatment
+- 3-4: Covers some deliverables but lacks depth or misses key elements
+- 5-6: Good coverage of most deliverables with adequate depth
+- 7-8: Comprehensive coverage of ALL deliverables with exceptional depth and insight
 
-Be strict and discriminative.
-You are judging 40+ entries. Your job is to **rank** the best — not to praise everyone.
-Avoid giving high scores to submissions that are long but repetitive or verbose. Quality > length.
-Do not reward good writing alone. Reward depth, framing, and unique value.
+**ORIGINAL INSIGHT & ANALYSIS (4 points)**
+- 0-1: Rehashes obvious points, no unique perspective
+- 2-3: Some original thoughts but not groundbreaking
+- 4: Genuinely surprising observations, predictions, or frameworks
 
-Return ONLY this JSON format:
+**WRITING QUALITY & ACCESSIBILITY (3 points)**
+- 0-1: Poor structure, unclear for newcomers, boring
+- 2: Decent structure but lacks engagement or clarity
+- 3: Compelling, accessible, well-structured with engaging voice
+
+**ECOSYSTEM DEPTH & ACCURACY (2 points)**
+- 0-1: Shallow or inaccurate ecosystem coverage
+- 2: Deep, accurate coverage of key players and relationships
+
+**VISUAL PRESENTATION (1 point)**
+- 0: No visual elements or data presentation
+- 1: Clear evidence of charts, graphs, or structured data presentation
+
+🚨 BRUTAL SCORING STANDARDS:
+
+**0-6 points: FAILS BOUNTY REQUIREMENTS**
+- Missing core deliverables from bounty description
+- Generic content that could apply to any blockchain
+- Poor writing quality, inaccessible to newcomers
+
+**7-10 points: PARTIALLY MEETS REQUIREMENTS** 
+- Covers some deliverables but misses key elements
+- Basic treatment without depth or originality
+- Adequate writing but not engaging
+
+**11-13 points: MEETS MOST REQUIREMENTS**
+- Covers most deliverables with good depth
+- Shows understanding and some unique angles
+- Well-written and accessible
+
+**14-16 points: EXCEEDS REQUIREMENTS**
+- Comprehensive coverage of ALL deliverables
+- Deep insights with original frameworks
+- Exceptional writing quality and presentation
+
+**17-18 points: LEGENDARY BOUNTY SUBMISSION**
+- Paradigm-shifting insights that redefine the space
+- Perfect execution of all deliverables
+- Writing quality that sets new standards
+
+⚠️ MANDATORY PENALTIES:
+- Missing network-level metrics: -3 points
+- No ecosystem map or shallow ecosystem coverage: -4 points
+- Missing regulatory analysis: -2 points
+- Poor accessibility for newcomers: -2 points
+- No visual elements when discussing data: -2 points
+- Factual errors: -2 points
+
+🎯 JUDGE MINDSET:
+- You are evaluating against SPECIFIC bounty requirements
+- Most submissions will fail to meet the comprehensive deliverables
+- High scores (14+) require meeting ALL bounty criteria exceptionally well
+- When in doubt about deliverable coverage, score LOWER
+
+Your reputation depends on identifying submissions that truly fulfill the bounty requirements.
+
+Return ONLY valid JSON in this exact format (no markdown, no explanations, no extra text):
 {
   "score": total_score,
   "reasoning": [
     "critical feedback or praise about conceptual coverage",
     "judgment on ecosystem/product depth (what was covered well or missing)",
-    "comment on structure, clarity, or writing style",
+    "comment on structure, clarity, writing style, and any evidence of visual presentation",
     "description of any original idea or framing — quote or explain it clearly",
-    "note a specific strength or flaw that sets the submission apart"
+    "note a specific strength or flaw that sets the submission apart, including presentation quality"
   ]
 }
 
-Here is the article:
-"""${text.length > 10000 ? text.slice(0, 5000) + "\n...\n" + text.slice(-2000) : text}"""
+Here is the article text:
+"""${text.length > 12000 ? text.slice(0, 6000) + "\n...\n" + text.slice(-3000) : text}"""
 `;
 
   const response = await openai.chat.completions.create({
-    model: 'gpt-4',
+    model: 'gpt-4o',
     messages: [{ role: 'user', content: prompt }],
-    temperature: 0.2
+    temperature: 0.2,
+    max_tokens: 1000
   });
 
   if (!response || !response.choices || !response.choices.length) {
