@@ -2,7 +2,8 @@ const fs = require('fs');
 const csv = require('csv-parser');
 require('dotenv').config();
 const OpenAI = require('openai');
-const pdf = require('pdf-parse');
+// PDF parsing no longer needed - using text files from Firecrawl
+// const pdf = require('pdf-parse');
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
@@ -35,10 +36,8 @@ async function judgeWithAI(rows) {
   console.log('\n🤖 Phase 1: AI Detection Analysis');
   for (const row of rows) {
     try {
-      const pdfPath = `pdfs/${sanitizeFilename(row.Name)}.pdf`;
-      const pdfBuffer = fs.readFileSync(pdfPath);
-      const pdfData = await pdf(pdfBuffer);
-      const text = pdfData.text;
+      const textPath = `texts/${sanitizeFilename(row.Name)}.txt`;
+      const text = fs.readFileSync(textPath, 'utf8');
       const aiDetectionResponse = await detectAIContent(text);
       
       // Clean the response
@@ -100,10 +99,8 @@ async function judgeWithAI(rows) {
   console.log('\n📝 Phase 2: Quality Evaluation (Human-written only)');
   for (const row of humanWrittenSubmissions) {
     try {
-      const pdfPath = `pdfs/${sanitizeFilename(row.Name)}.pdf`;
-      const pdfBuffer = fs.readFileSync(pdfPath);
-      const pdfData = await pdf(pdfBuffer);
-      const text = pdfData.text;
+      const textPath = `texts/${sanitizeFilename(row.Name)}.txt`;
+      const text = fs.readFileSync(textPath, 'utf8');
       const aiResponse = await evaluateSubmission(text);
       
       // Clean the response - remove markdown code blocks if present
@@ -381,6 +378,16 @@ Here is the article text:
 }
 
 async function runComparativeJudgment(results) {
+  if (results.length < 3) {
+    console.log(`\n📊 Only ${results.length} human submission(s) found - skipping comparative judgment`);
+    const simpleResults = results.sort((a, b) => b.Score - a.Score).map((entry, i) => ({
+      name: entry.Name,
+      rank: i + 1
+    }));
+    generateFinalReadme({ rankings: simpleResults, justification: results.map(r => `${r.Name} scored ${r.Score}/18`) }, results);
+    return;
+  }
+  
   const top10 = results.sort((a, b) => b.Score - a.Score).slice(0, 10);
 
   const formatted = top10.map((entry, i) => `## Entry ${i + 1}: ${entry.Name}\nScore: ${entry.Score}/18\n---\n${entry.Reasoning.map(r => `- ${r}`).join('\n')}`).join('\n\n');
@@ -419,7 +426,17 @@ Return ONLY this JSON:
     temperature: 0.2
   });
 
-  const output = JSON.parse(response.choices[0].message.content);
+  let responseContent = response.choices[0].message.content.trim();
+  
+  // Clean response - remove markdown code blocks if present
+  if (responseContent.startsWith('```json')) {
+    responseContent = responseContent.replace(/^```json\s*/, '').replace(/\s*```$/, '');
+  }
+  if (responseContent.startsWith('```')) {
+    responseContent = responseContent.replace(/^```\s*/, '').replace(/\s*```$/, '');
+  }
+  
+  const output = JSON.parse(responseContent);
   generateFinalReadme(output, results);
 }
 

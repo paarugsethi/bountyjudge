@@ -1,10 +1,13 @@
 const fs = require('fs');
 const csv = require('csv-parser');
-const puppeteer = require('puppeteer');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
+const FirecrawlApp = require('@mendable/firecrawl-js').default;
+require('dotenv').config();
 
-const MAX_CONCURRENT = 3;
-const TIMEOUT_MS = 30000;
+// Initialize Firecrawl
+const app = new FirecrawlApp({ apiKey: process.env.FIRECRAWL_API_KEY });
+
+const MAX_CONCURRENT = 2; // Firecrawl rate limit
 const RETRY_ATTEMPTS = 2;
 
 // Normalize link to include https if missing and fix Substack URLs
@@ -38,9 +41,13 @@ fs.createReadStream('submissions.csv')
   .pipe(csv())
   .on('data', (row) => {
     if (row['Submission Link']) {
-      // Skip arena.colosseum links
+      // Skip arena.colosseum and Twitter/X links
       if (row['Submission Link'].includes('arena.colosseum')) {
         console.log(`⏭️  Skipping arena.colosseum link: ${row.Name}`);
+        return;
+      }
+      if (row['Submission Link'].includes('x.com') || row['Submission Link'].includes('twitter.com')) {
+        console.log(`⏭️  Skipping Twitter/X link: ${row.Name}`);
         return;
       }
       // Normalize the link before storing
@@ -50,6 +57,12 @@ fs.createReadStream('submissions.csv')
   })
   .on('end', async () => {
     console.log(`Found ${rows.length} submissions. Processing...`);
+    
+    // Ensure texts directory exists
+    if (!fs.existsSync('texts')) {
+      fs.mkdirSync('texts');
+    }
+    
     await processLinks(rows);
   });
 
@@ -89,53 +102,44 @@ async function loadExistingResults() {
   }
 }
 
-// Process single submission with retry logic
-async function processSubmission(browser, row, retryCount = 0) {
+// Process single submission with Firecrawl
+async function processSubmissionWithFirecrawl(row, retryCount = 0) {
   const link = row['Submission Link'];
   
   try {
-    // Skip Google Docs and Google Drive links
+    // Skip Google Docs, Google Drive, and Twitter/X links  
     if (link.includes('docs.google.com') || link.includes('drive.google.com')) {
       console.log(`⏭️  Skipping Google link: ${link}`);
       return null;
     }
+    if (link.includes('x.com') || link.includes('twitter.com')) {
+      console.log(`⏭️  Skipping Twitter/X link: ${link}`);
+      return null;
+    }
     
-    const page = await browser.newPage();
+    console.log(`🔥 Firecrawl scraping: ${link}`);
     
-    // Set desktop browser-like user agent
-    await page.setUserAgent(
-      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
-    );
-    
-    // Navigate with timeout
-    await page.goto(normalizeLink(link), { 
-      waitUntil: 'networkidle2', 
-      timeout: TIMEOUT_MS 
+    // Use Firecrawl to scrape the page
+    const scrapeResult = await app.scrapeUrl(normalizeLink(link), {
+      formats: ['markdown'],
+      timeout: 30000,
+      waitFor: 2000
     });
     
-    // Scroll to bottom to trigger lazy load
-    await autoScroll(page);
+    if (!scrapeResult.success) {
+      throw new Error(`Firecrawl failed: ${scrapeResult.error || 'Unknown error'}`);
+    }
     
-    // Extract text based on platform
-    let text = await extractText(page, link);
-    
-    const wordCount = text.trim().split(/\s+/).length;
-    
-    // Save PDF
-    const filename = `pdfs/${sanitizeFilename(row['Name'])}.pdf`;
-    fs.mkdirSync('pdfs', { recursive: true });
-    await page.pdf({ 
-      path: filename, 
-      format: 'A4',
-      printBackground: true,
-      margin: { top: '1cm', bottom: '1cm', left: '1cm', right: '1cm' }
-    });
-    
-    await page.close();
+    const text = scrapeResult.markdown || '';
+    const wordCount = text.trim().split(/\s+/).filter(word => word.length > 0).length;
     
     console.log(`${link} — ${wordCount} words`);
     
     if (wordCount >= 2000) {
+      // Save full text content to file
+      const textPath = `texts/${sanitizeFilename(row['Name'])}.txt`;
+      fs.writeFileSync(textPath, text);
+      
       return {
         Name: row['Name'],
         Email: row['Email ID'],
@@ -149,8 +153,8 @@ async function processSubmission(browser, row, retryCount = 0) {
   } catch (err) {
     if (retryCount < RETRY_ATTEMPTS) {
       console.log(`⚠️  Retrying ${link} (attempt ${retryCount + 1}/${RETRY_ATTEMPTS})`);
-      await new Promise(resolve => setTimeout(resolve, 2000)); // Wait 2s before retry
-      return processSubmission(browser, row, retryCount + 1);
+      await new Promise(resolve => setTimeout(resolve, 5000)); // Wait 5s before retry
+      return processSubmissionWithFirecrawl(row, retryCount + 1);
     }
     
     console.error(`❌ Failed to process ${link} after ${RETRY_ATTEMPTS + 1} attempts: ${err.message}`);
@@ -158,58 +162,6 @@ async function processSubmission(browser, row, retryCount = 0) {
   }
 }
 
-// Extract text based on platform
-async function extractText(page, link) {
-  if (link.includes('substack.com')) {
-    try {
-      await page.waitForSelector('.markup, .post-content, .available-content', { timeout: 5000 });
-      await page.waitForTimeout(2000);
-      
-      return await page.evaluate(() => {
-        const selectors = [
-          '.markup', '.post-content', '.available-content', '.body', '.post-body',
-          '[class*="markup"]', 'article .markup', '.container .markup'
-        ];
-        
-        for (const selector of selectors) {
-          const element = document.querySelector(selector);
-          if (element && element.innerText && element.innerText.length > 100) {
-            return element.innerText;
-          }
-        }
-        
-        return document.body.innerText || '';
-      });
-    } catch (e) {
-      console.log(`⚠️  Substack fallback for ${link}`);
-      return await page.evaluate(() => document.body.innerText || '');
-    }
-  } else if (link.includes('medium.com')) {
-    try {
-      await page.waitForSelector('.section-inner, .n, article', { timeout: 3000 });
-      return await page.evaluate(() => {
-        const sectionTexts = Array.from(document.querySelectorAll('.section-inner, .n, article'))
-          .map(el => el.innerText)
-          .join(' ');
-        return sectionTexts;
-      });
-    } catch (e) {
-      console.log(`⚠️  Medium fallback for ${link}`);
-      return await page.evaluate(() => document.body.innerText || '');
-    }
-  } else {
-    try {
-      await page.waitForSelector('.kix-page, .doc-content, .contents', { timeout: 3000 });
-      return await page.evaluate(() => {
-        const content = document.querySelector('.kix-page, .doc-content, .contents');
-        return content ? content.innerText : '';
-      });
-    } catch (e) {
-      console.log(`⚠️  Using fallback selector for ${link}`);
-      return await page.evaluate(() => document.body.innerText || '');
-    }
-  }
-}
 
 // Process submissions in batches with concurrency
 async function processLinks(submissions) {
@@ -229,12 +181,6 @@ async function processLinks(submissions) {
     return;
   }
   
-  // Launch browser once
-  const browser = await puppeteer.launch({ 
-    headless: true, 
-    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
-  });
-  
   try {
     // Process in batches of MAX_CONCURRENT
     for (let i = 0; i < toProcess.length; i += MAX_CONCURRENT) {
@@ -242,7 +188,7 @@ async function processLinks(submissions) {
       
       console.log(`\n🔄 Processing batch ${Math.floor(i/MAX_CONCURRENT) + 1}/${Math.ceil(toProcess.length/MAX_CONCURRENT)} (${batch.length} submissions)`);
       
-      const batchPromises = batch.map(row => processSubmission(browser, row));
+      const batchPromises = batch.map(row => processSubmissionWithFirecrawl(row));
       const batchResults = await Promise.allSettled(batchPromises);
       
       // Add successful results
@@ -256,13 +202,13 @@ async function processLinks(submissions) {
       await saveResults(results);
       console.log(`📊 Progress: ${i + batch.length}/${toProcess.length} processed, ${results.length} qualifying submissions`);
       
-      // Small delay between batches
+      // Rate limiting delay between batches
       if (i + MAX_CONCURRENT < toProcess.length) {
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve, 8000)); // Much longer delay for API respect
       }
     }
-  } finally {
-    await browser.close();
+  } catch (error) {
+    console.error('❌ Error during processing:', error);
   }
   
   console.log(`\n✅ Final results: ${results.length} qualifying submissions saved`);
@@ -283,24 +229,6 @@ async function saveResults(results) {
   await csvWriter.writeRecords(results);
 }
 
-// Scroll to bottom of page slowly to load all content
-async function autoScroll(page) {
-  await page.evaluate(async () => {
-    await new Promise((resolve) => {
-      let totalHeight = 0;
-      const distance = 100;
-      const timer = setInterval(() => {
-        const scrollHeight = document.body.scrollHeight;
-        window.scrollBy(0, distance);
-        totalHeight += distance;
-        if (totalHeight >= scrollHeight - window.innerHeight) {
-          clearInterval(timer);
-          resolve();
-        }
-      }, 100);
-    });
-  });
-}
 
 function sanitizeFilename(name) {
   return name.replace(/[^a-z0-9]/gi, '_').toLowerCase();
